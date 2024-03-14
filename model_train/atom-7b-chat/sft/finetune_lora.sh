@@ -1,4 +1,4 @@
-output_model=../darkword-llm-atom-7B-Chat
+output_model=../darkword-atom-7B-Chat
 # 需要修改到自己的输入目录
 if [ ! -d ${output_model} ];then  
     mkdir ${output_model}
@@ -7,11 +7,9 @@ cp ./finetune.sh ${output_model}
 
 model_name_or_path="FlagAlpha/Atom-7B-Chat"
 # train_files="../../../1data_crawl/atom-sample/train_sft.csv"
-# train_files="../../../1data_crawl/darkword_train_data_collected/darkword_train_data.csv"
-train_files="../../../1data_crawl/darkword_train_data_collected/darkword_train_data_v2.csv"
-# 测试数据暂时没有，先用训练的数据集吧
+train_files="../../../data_crawl/darkword_data_collected/darkword_train_data.csv"
 # validation_files="../../../1data_crawl/atom-sample/dev_sft.csv ../../../1data_crawl/atom-sample/dev_sft_sharegpt.csv"
-validation_files="../../../1data_crawl/darkword_train_data_collected/darkword_train_data_v2.csv"
+validation_files="../../../data_crawl/darkword_data_collected/darkword_validate_data.csv"
 deepspeed --include localhost:0 finetune_clm_lora.py \
     --model_name_or_path $model_name_or_path \
     --train_files $train_files \
