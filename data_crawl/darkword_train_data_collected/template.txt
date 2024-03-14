@@ -1,0 +1,8 @@
+<s>Human: 用一句话描述地球为什么是独一无二的。</s><s>Assistant: 因为地球是目前为止唯一已知存在生命的行星。</s>
+<s>{background}，{category}，{input}</s><s>{content}</s>
+<s>row["background"]，row["category"]，row["input"]</s><s>row["content"]</s>
+
+
+atom-template："<s>Human: "+问题+"\n</s><s>Assistant: "+答案+"\n</s>"
+<s>Human: {background}，{category}，{input}\n</s><s>Assistant: {content}\n</s>
+"<s>Human: "+row["background"]+"，"+row["category"]+"，"+row["input"]+"\n</s><s>Assistant: "+row["content"]+"\n</s>"
