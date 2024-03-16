@@ -1,6 +1,6 @@
 hostfile=""
 include="localhost:0"
-data_path=""
+data_path="/home/w1nd/darkword/1darkword/data_crawl/darkword_data_baichuan2/train_data.json"
 model_name="baichuan-inc/Baichuan2-7B-Chat"
 output_dir="../darkword-Baichuan2-7B-Chat"
 deepspeed --hostfile=$hostfile --include=$include fine-tune.py  \
