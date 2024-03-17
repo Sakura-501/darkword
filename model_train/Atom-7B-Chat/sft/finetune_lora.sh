@@ -1,4 +1,4 @@
-output_model=../darkword-lora16-atom-7B-Chat
+output_model=../darkword-Atom-7B-Chat
 # 需要修改到自己的输入目录
 if [ ! -d ${output_model} ];then  
     mkdir ${output_model}

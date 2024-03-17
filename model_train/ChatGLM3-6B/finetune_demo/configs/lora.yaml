@@ -3,8 +3,8 @@ data_config:
   val_file: dev.json
   test_file: dev.json
   num_proc: 16
-max_input_length: 128
-max_output_length: 256
+max_input_length: 256
+max_output_length: 512
 training_args:
   # see `transformers.Seq2SeqTrainingArguments`
   output_dir: ../darkword-ChatGLM3-6B
@@ -33,7 +33,7 @@ training_args:
   generation_config:
     max_new_tokens: 256
   # set your absolute deepspeed path here
-  #deepspeed: ds_zero_2.json
+  deepspeed: configs/ds_zero_2.json
   # set to true if train with cpu.
   use_cpu: false
 peft_config:
