@@ -194,3 +194,6 @@
 2024-03-19 12:30:32,166 DEBUG   HandlerThread:4111500 [handler.py:handle_request():146] handle_request: stop_status
 2024-03-19 12:30:32,167 DEBUG   SenderThread:4111500 [sender.py:send_request():409] send_request: stop_status
 2024-03-19 12:30:32,168 DEBUG   HandlerThread:4111500 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-19 12:30:37,388 DEBUG   HandlerThread:4111500 [handler.py:handle_request():146] handle_request: status_report
+2024-03-19 12:30:38,068 INFO    Thread-12 :4111500 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/wandb/run-20240319_122711-eaklytjt/files/output.log
+2024-03-19 12:30:40,069 INFO    Thread-12 :4111500 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/wandb/run-20240319_122711-eaklytjt/files/output.log
