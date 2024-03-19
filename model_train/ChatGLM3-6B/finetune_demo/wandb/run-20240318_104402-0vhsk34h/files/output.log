@@ -1,0 +1,141 @@
+
+  0%|                                                                                                        | 1/3000 [00:02<2:23:51,  2.88s/it]Traceback (most recent call last):
+  File "/home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/finetune_hf.py", line 558, in <module>
+    app()
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/main.py", line 328, in __call__
+    raise e
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/main.py", line 311, in __call__
+    return get_command(self)(*args, **kwargs)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/core.py", line 716, in main
+    return _main(
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/core.py", line 216, in _main
+    rv = self.invoke(ctx)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/main.py", line 683, in wrapper
+    return callback(**use_params)  # type: ignore
+  File "/home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/finetune_hf.py", line 520, in main
+    trainer.train()
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/trainer.py", line 2781, in training_step
+    self.accelerator.backward(loss)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/accelerate/accelerator.py", line 1960, in backward
+    self.deepspeed_engine_wrapped.backward(loss, **kwargs)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/accelerate/utils/deepspeed.py", line 167, in backward
+    self.engine.backward(loss, **kwargs)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1974, in backward
+    self.optimizer.backward(loss, retain_graph=retain_graph)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 2052, in backward
+    buf_1 = torch.empty(int(self.reduce_bucket_size),
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.86 GiB. GPU 0 has a total capacity of 79.15 GiB of which 1.62 GiB is free. Process 2635670 has 26.01 GiB memory in use. Process 2673556 has 34.17 GiB memory in use. Including non-PyTorch memory, this process has 17.33 GiB memory in use. Of the allocated memory 14.83 GiB is allocated by PyTorch, and 1.68 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[31m╭─────────────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ────────────────────────────────╮
+[31m│[39m /home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/[1mfinetune_hf.py[22m:[94m520[39m in [92mmain[39m   [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   517 │                                                                                          [31m│
+[31m│[39m   518 │   # Determine whether to continue training without breakpoints or if it is empty, then   [31m│
+[31m│[39m   519 │   [94mif[39m auto_resume_from_checkpoint.upper() == [33m""[39m [95mor[39m auto_resume_from_checkpoint [95mis[39m [94mNone[39m:   [31m│
+[31m│[39m [31m❱ [39m520 │   │   trainer.train()                                                                    [31m│
+[31m│[39m   521 │   [94melse[39m:                                                                                  [31m│
+[31m│[39m   522 │   │   output_dir = ft_config.training_args.output_dir                                    [31m│
+[31m│[39m   523 │   │   dirlist = os.listdir(output_dir)                                                   [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/[1mtrainer.py[22m:[94m1539[39m in [92mtrain[39m    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1536 │   │   │   [94mfinally[39m:                                                                      [31m│
+[31m│[39m   1537 │   │   │   │   hf_hub_utils.enable_progress_bars()                                       [31m│
+[31m│[39m   1538 │   │   [94melse[39m:                                                                             [31m│
+[31m│[39m [31m❱ [39m1539 │   │   │   [94mreturn[39m inner_training_loop(                                                   [31m│
+[31m│[39m   1540 │   │   │   │   args=args,                                                                [31m│
+[31m│[39m   1541 │   │   │   │   resume_from_checkpoint=resume_from_checkpoint,                            [31m│
+[31m│[39m   1542 │   │   │   │   trial=trial,                                                              [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/[1mtrainer.py[22m:[94m1869[39m in          [31m│
+[31m│[39m [92m_inner_training_loop[39m                                                                             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1866 │   │   │   │   │   [96mself[39m.control = [96mself[39m.callback_handler.on_step_begin(args, [96mself[39m.state,  [31m│
+[31m│[39m   1867 │   │   │   │                                                                             [31m│
+[31m│[39m   1868 │   │   │   │   [94mwith[39m [96mself[39m.accelerator.accumulate(model):                                  [31m│
+[31m│[39m [31m❱ [39m1869 │   │   │   │   │   tr_loss_step = [96mself[39m.training_step(model, inputs)                      [31m│
+[31m│[39m   1870 │   │   │   │                                                                             [31m│
+[31m│[39m   1871 │   │   │   │   [94mif[39m (                                                                      [31m│
+[31m│[39m   1872 │   │   │   │   │   args.logging_nan_inf_filter                                           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/[1mtrainer.py[22m:[94m2781[39m in          [31m│
+[31m│[39m [92mtraining_step[39m                                                                                    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   2778 │   │   │   [94mwith[39m amp.scale_loss(loss, [96mself[39m.optimizer) [94mas[39m scaled_loss:                     [31m│
+[31m│[39m   2779 │   │   │   │   scaled_loss.backward()                                                    [31m│
+[31m│[39m   2780 │   │   [94melse[39m:                                                                             [31m│
+[31m│[39m [31m❱ [39m2781 │   │   │   [96mself[39m.accelerator.backward(loss)                                               [31m│
+[31m│[39m   2782 │   │                                                                                     [31m│
+[31m│[39m   2783 │   │   [94mreturn[39m loss.detach() / [96mself[39m.args.gradient_accumulation_steps                      [31m│
+[31m│[39m   2784                                                                                           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/accelerate/[1maccelerator.py[22m:[94m1960[39m in        [31m│
+[31m│[39m [92mbackward[39m                                                                                         [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1957 │   │   │   # deepspeed handles loss scaling by gradient_accumulation_steps in its `back  [31m│
+[31m│[39m   1958 │   │   │   loss = loss / [96mself[39m.gradient_accumulation_steps                                [31m│
+[31m│[39m   1959 │   │   [94mif[39m [96mself[39m.distributed_type == DistributedType.DEEPSPEED:                            [31m│
+[31m│[39m [31m❱ [39m1960 │   │   │   [96mself[39m.deepspeed_engine_wrapped.backward(loss, **kwargs)                        [31m│
+[31m│[39m   1961 │   │   [94melif[39m [96mself[39m.distributed_type == DistributedType.MEGATRON_LM:                        [31m│
+[31m│[39m   1962 │   │   │   [94mreturn[39m                                                                        [31m│
+[31m│[39m   1963 │   │   [94melif[39m [96mself[39m.scaler [95mis[39m [95mnot[39m [94mNone[39m:                                                     [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/accelerate/utils/[1mdeepspeed.py[22m:[94m167[39m in     [31m│
+[31m│[39m [92mbackward[39m                                                                                         [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   164 │                                                                                          [31m│
+[31m│[39m   165 │   [94mdef[39m [92mbackward[39m([96mself[39m, loss, **kwargs):                                                    [31m│
+[31m│[39m   166 │   │   # runs backpropagation and handles mixed precision                                 [31m│
+[31m│[39m [31m❱ [39m167 │   │   [96mself[39m.engine.backward(loss, **kwargs)                                               [31m│
+[31m│[39m   168 │   │                                                                                      [31m│
+[31m│[39m   169 │   │   # Deepspeed's `engine.step` performs the following operations:                     [31m│
+[31m│[39m   170 │   │   # - gradient accumulation check                                                    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/utils/[1mnvtx.py[22m:[94m15[39m in [92mwrapped_fn[39m [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   12 │                                                                                           [31m│
+[31m│[39m   13 │   [94mdef[39m [92mwrapped_fn[39m(*args, **kwargs):                                                        [31m│
+[31m│[39m   14 │   │   get_accelerator().range_push(func.[91m__qualname__[39m)                                     [31m│
+[31m│[39m [31m❱ [39m15 │   │   ret_val = func(*args, **kwargs)                                                     [31m│
+[31m│[39m   16 │   │   get_accelerator().range_pop()                                                       [31m│
+[31m│[39m   17 │   │   [94mreturn[39m ret_val                                                                      [31m│
+[31m│[39m   18                                                                                             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/[1mengine.py[22m:[94m1974[39m in      [31m│
+[31m│[39m [92mbackward[39m                                                                                         [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1971 │   │                                                                                     [31m│
+[31m│[39m   1972 │   │   [94mif[39m [96mself[39m.zero_optimization():                                                      [31m│
+[31m│[39m   1973 │   │   │   [96mself[39m.optimizer.is_gradient_accumulation_boundary = [96mself[39m.is_gradient_accumula  [31m│
+[31m│[39m [31m❱ [39m1974 │   │   │   [96mself[39m.optimizer.backward(loss, retain_graph=retain_graph)                      [31m│
+[31m│[39m   1975 │   │   [94melif[39m [96mself[39m.amp_enabled():                                                          [31m│
+[31m│[39m   1976 │   │   │   # AMP requires delaying unscale when inside gradient accumulation boundaries  [31m│
+[31m│[39m   1977 │   │   │   # https://nvidia.github.io/apex/advanced.html#gradient-accumulation-across-i  [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/zero/[1mstage_1_and_2.py[22m: [31m│
+[31m│[39m [94m2052[39m in [92mbackward[39m                                                                                 [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   2049 │   │   │                                                                                 [31m│
+[31m│[39m   2050 │   │   │   # Use double buffers to avoid data access conflict when overlap_comm is enab  [31m│
+[31m│[39m   2051 │   │   │   [94mif[39m [96mself[39m.overlap_comm:                                                         [31m│
+[31m│[39m [31m❱ [39m2052 │   │   │   │   buf_1 = torch.empty([96mint[39m([96mself[39m.reduce_bucket_size),                         [31m│
+[31m│[39m   2053 │   │   │   │   │   │   │   │   │   dtype=[96mself[39m.dtype,                                     [31m│
+[31m│[39m   2054 │   │   │   │   │   │   │   │   │   device=get_accelerator().current_device_name())       [31m│
+[31m│[39m   2055 │   │   │   │   [96mself[39m.ipg_buffer.append(buf_1)                                             [31m│
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[1mOutOfMemoryError: [22mCUDA out of memory. Tried to allocate [1m1.86[22m GiB. GPU [1m0[22m has a total capacity of [1m79.15[22m GiB of which [1m1.62[22m GiB is free. Process
+[1m2635670[22m has [1m26.01[22m GiB memory in use. Process [1m2673556[22m has [1m34.17[22m GiB memory in use. Including non-PyTorch memory, this process has [1m17.33[22m GiB
+memory in use. Of the allocated memory [1m14.83[22m GiB is allocated by PyTorch, and [1m1.68[22m GiB is reserved by PyTorch but unallocated. If reserved but
+unallocated memory is large try setting [33mPYTORCH_CUDA_ALLOC_CONF[39m=[35mexpandable_segments[39m:[3mTrue[23m to avoid fragmentation.  See documentation for Memory
+Management  [1m([22m[4mhttps://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
