@@ -60,6 +60,54 @@ _wandb:
       5: 1
       6:
       - 1
+    - 1: eval/rouge-1
+      5: 1
+      6:
+      - 1
+    - 1: eval/rouge-2
+      5: 1
+      6:
+      - 1
+    - 1: eval/rouge-l
+      5: 1
+      6:
+      - 1
+    - 1: eval/bleu-4
+      5: 1
+      6:
+      - 1
+    - 1: eval/runtime
+      5: 1
+      6:
+      - 1
+    - 1: eval/samples_per_second
+      5: 1
+      6:
+      - 1
+    - 1: eval/steps_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/train_runtime
+      5: 1
+      6:
+      - 1
+    - 1: train/train_samples_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/train_steps_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/total_flos
+      5: 1
+      6:
+      - 1
+    - 1: train/train_loss
+      5: 1
+      6:
+      - 1
 num_layers:
   desc: null
   value: 28

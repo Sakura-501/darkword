@@ -1,0 +1,46 @@
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/inferenc │
+│ e_hf.py:51 in main                                                           │
+│                                                                              │
+│   48 │   │   model_dir: Annotated[str, typer.Argument(help='')],             │
+│   49 │   │   prompt: Annotated[str, typer.Option(help='')],                  │
+│   50 ):                                                                      │
+│ ❱ 51 │   model, tokenizer = load_model_and_tokenizer(model_dir)              │
+│   52 │   response, _ = model.chat(tokenizer, prompt)                         │
+│   53 │   # response, _ = model.stream_chat(tokenizer, prompt)                │
+│   54 │   print(response)                                                     │
+│                                                                              │
+│ /home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/inferenc │
+│ e_hf.py:31 in load_model_and_tokenizer                                       │
+│                                                                              │
+│   28 │   model_dir = _resolve_path(model_dir)                                │
+│   29 │   device_map="cuda:0"                                                 │
+│   30 │   if (model_dir / 'adapter_config.json').exists():                    │
+│ ❱ 31 │   │   model = AutoPeftModelForCausalLM.from_pretrained(               │
+│   32 │   │   │   model_dir, trust_remote_code=True, device_map=device_map    │
+│   33 │   │   )                                                               │
+│   34 │   │   tokenizer_dir = model.peft_config['default'].base_model_name_or │
+│                                                                              │
+│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/peft/auto.py:69 in   │
+│ from_pretrained                                                              │
+│                                                                              │
+│    66 │   │   are passed along to `PeftConfig` that automatically takes care │
+│    67 │   │   the config object init.                                        │
+│    68 │   │   """                                                            │
+│ ❱  69 │   │   peft_config = PeftConfig.from_pretrained(pretrained_model_name │
+│    70 │   │   base_model_path = peft_config.base_model_name_or_path          │
+│    71 │   │                                                                  │
+│    72 │   │   task_type = getattr(peft_config, "task_type", None)            │
+│                                                                              │
+│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/peft/config.py:134   │
+│ in from_pretrained                                                           │
+│                                                                              │
+│   131 │   │   │   config_cls = cls                                           │
+│   132 │   │                                                                  │
+│   133 │   │   kwargs = {**class_kwargs, **loaded_attributes}                 │
+│ ❱ 134 │   │   config = config_cls(**kwargs)                                  │
+│   135 │   │   return config                                                  │
+│   136 │                                                                      │
+│   137 │   @classmethod                                                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+TypeError: LoraConfig.__init__() got an unexpected keyword argument 'use_rslora'

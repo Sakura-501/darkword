@@ -80,3 +80,633 @@
  17%|█████████████████▎                                                                                      | 500/3000 [01:01<05:47,  7.20it/s]***** Running Evaluation *****
   Num examples = 50
   Batch size = 16
+{'loss': 2.9576, 'learning_rate': 4.166666666666667e-05, 'epoch': 0.1}
+
+
+
+Loading model from cache /tmp/jieba.cache█████████████████████████████████████████████████████████████████████████| 4/4 [00:26<00:00,  6.66s/it]
+{'eval_rouge-1': 27.66739, 'eval_rouge-2': 8.717544, 'eval_rouge-l': 22.794804, 'eval_bleu-4': 0.04985116625989587, 'eval_runtime': 39.1109, 'eval_samples_per_second': 1.278, 'eval_steps_per_second': 0.102, 'epoch': 0.1}
+Loading model cost 0.606 seconds.
+Prefix dict has been built successfully.
+ 17%|█████████████████▎                                                                                      | 500/3000 [01:41<05:47,  7.20it/s]Checkpoint destination directory ../darkword-ChatGLM3-6B/checkpoint-500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+[2024-03-19 07:09:58,819] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step500 is about to be saved!
+[2024-03-19 07:09:58,828] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: ../darkword-ChatGLM3-6B/checkpoint-500/global_step500/mp_rank_00_model_states.pt
+[2024-03-19 07:09:58,828] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-500/global_step500/mp_rank_00_model_states.pt...
+[2024-03-19 07:09:58,850] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-500/global_step500/mp_rank_00_model_states.pt.
+[2024-03-19 07:09:58,852] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-19 07:09:58,949] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-19 07:09:58,950] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved ../darkword-ChatGLM3-6B/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-19 07:09:58,950] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step500 is ready now!
+Saving model checkpoint to ../darkword-ChatGLM3-6B/checkpoint-500
+loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--THUDM--chatglm3-6b/snapshots/9addbe01105ca1939dd60a0e5866a1812be9daea/config.json
+Model config ChatGLMConfig {
+  "_name_or_path": "THUDM/chatglm3-6b",
+  "add_bias_linear": false,
+  "add_qkv_bias": true,
+  "apply_query_key_layer_scaling": true,
+  "apply_residual_connection_post_layernorm": false,
+  "architectures": [
+    "ChatGLMModel"
+  ],
+  "attention_dropout": 0.0,
+  "attention_softmax_in_fp32": true,
+  "auto_map": {
+    "AutoConfig": "THUDM/chatglm3-6b--configuration_chatglm.ChatGLMConfig",
+    "AutoModel": "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",
+    "AutoModelForCausalLM": "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",
+    "AutoModelForSeq2SeqLM": "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",
+    "AutoModelForSequenceClassification": "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForSequenceClassification"
+  },
+  "bias_dropout_fusion": true,
+  "classifier_dropout": null,
+  "eos_token_id": 2,
+  "ffn_hidden_size": 13696,
+  "fp32_residual_connection": false,
+  "hidden_dropout": 0.0,
+  "hidden_size": 4096,
+  "kv_channels": 128,
+  "layernorm_epsilon": 1e-05,
+  "model_type": "chatglm",
+  "multi_query_attention": true,
+  "multi_query_group_num": 2,
+  "num_attention_heads": 32,
+  "num_layers": 28,
+  "original_rope": true,
+  "pad_token_id": 0,
+  "padded_vocab_size": 65024,
+  "post_layer_norm": true,
+  "pre_seq_len": null,
+  "prefix_projection": false,
+  "quantization_bit": 0,
+  "rmsnorm": true,
+  "seq_length": 8192,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65024
+}
+tokenizer config file saved in ../darkword-ChatGLM3-6B/checkpoint-500/tokenizer_config.json
+Special tokens file saved in ../darkword-ChatGLM3-6B/checkpoint-500/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+ 17%|█████████████████▋                                                                                      | 509/3000 [01:48<36:58,  1.12it/s]
+{'loss': 3.3568, 'learning_rate': 4.15e-05, 'epoch': 0.1}
+
+ 18%|██████████████████▎                                                                                     | 529/3000 [01:50<04:15,  9.67it/s]
+{'loss': 2.6831, 'learning_rate': 4.116666666666667e-05, 'epoch': 0.11}
+
+ 18%|██████████████████▉                                                                                     | 548/3000 [01:52<04:11,  9.75it/s]
+{'loss': 3.2725, 'learning_rate': 4.0833333333333334e-05, 'epoch': 0.11}
+
+ 19%|███████████████████▋                                                                                    | 568/3000 [01:54<04:11,  9.68it/s]
+{'loss': 3.2703, 'learning_rate': 4.05e-05, 'epoch': 0.11}
+
+ 20%|████████████████████▎                                                                                   | 587/3000 [01:56<04:13,  9.53it/s]
+{'loss': 2.8316, 'learning_rate': 4.016666666666667e-05, 'epoch': 0.12}
+
+ 20%|█████████████████████                                                                                   | 607/3000 [01:58<04:05,  9.75it/s]
+{'loss': 2.4083, 'learning_rate': 3.983333333333333e-05, 'epoch': 0.12}
+
+ 21%|█████████████████████▋                                                                                  | 626/3000 [02:00<04:02,  9.79it/s]
+{'loss': 2.9489, 'learning_rate': 3.9500000000000005e-05, 'epoch': 0.13}
+
+ 22%|██████████████████████▍                                                                                 | 646/3000 [02:02<04:00,  9.81it/s]
+{'loss': 2.7127, 'learning_rate': 3.9166666666666665e-05, 'epoch': 0.13}
+
+ 22%|███████████████████████                                                                                 | 665/3000 [02:04<03:56,  9.89it/s]
+{'loss': 3.0325, 'learning_rate': 3.883333333333333e-05, 'epoch': 0.13}
+
+ 23%|███████████████████████▋                                                                                | 685/3000 [02:06<04:00,  9.64it/s]
+{'loss': 2.7402, 'learning_rate': 3.85e-05, 'epoch': 0.14}
+
+ 23%|████████████████████████▍                                                                               | 704/3000 [02:08<03:58,  9.62it/s]
+
+ 24%|█████████████████████████                                                                               | 724/3000 [02:10<03:50,  9.88it/s]
+{'loss': 2.6231, 'learning_rate': 3.8e-05, 'epoch': 0.14}
+
+ 25%|█████████████████████████▊                                                                              | 744/3000 [02:12<03:49,  9.82it/s]
+{'loss': 3.0014, 'learning_rate': 3.766666666666667e-05, 'epoch': 0.15}
+
+ 25%|██████████████████████████▍                                                                             | 763/3000 [02:14<03:53,  9.58it/s]
+
+ 26%|███████████████████████████▏                                                                            | 783/3000 [02:16<03:46,  9.81it/s]
+{'loss': 3.2527, 'learning_rate': 3.7166666666666664e-05, 'epoch': 0.15}
+{'loss': 2.3936, 'learning_rate': 3.7e-05, 'epoch': 0.16}
+
+ 27%|███████████████████████████▊                                                                            | 803/3000 [02:18<03:48,  9.62it/s]
+{'loss': 2.7193, 'learning_rate': 3.6666666666666666e-05, 'epoch': 0.16}
+
+ 27%|████████████████████████████▍                                                                           | 822/3000 [02:20<04:15,  8.53it/s]
+{'loss': 2.7949, 'learning_rate': 3.633333333333333e-05, 'epoch': 0.16}
+
+ 28%|█████████████████████████████▏                                                                          | 841/3000 [02:22<03:48,  9.47it/s]
+{'loss': 2.8533, 'learning_rate': 3.6e-05, 'epoch': 0.17}
+
+ 29%|█████████████████████████████▊                                                                          | 859/3000 [02:24<04:36,  7.76it/s]
+{'loss': 2.2129, 'learning_rate': 3.566666666666667e-05, 'epoch': 0.17}
+
+ 29%|██████████████████████████████▎                                                                         | 874/3000 [02:26<04:34,  7.74it/s]
+
+ 30%|██████████████████████████████▊                                                                         | 890/3000 [02:28<04:49,  7.28it/s]
+{'loss': 2.7186, 'learning_rate': 3.516666666666667e-05, 'epoch': 0.18}
+
+ 30%|███████████████████████████████▎                                                                        | 905/3000 [02:30<04:20,  8.05it/s]
+
+ 31%|███████████████████████████████▊                                                                        | 919/3000 [02:32<04:41,  7.39it/s]
+
+ 31%|████████████████████████████████▍                                                                       | 934/3000 [02:34<04:21,  7.92it/s]
+{'loss': 3.1266, 'learning_rate': 3.45e-05, 'epoch': 0.19}
+
+ 32%|████████████████████████████████▉                                                                       | 950/3000 [02:36<03:56,  8.66it/s]
+
+ 32%|█████████████████████████████████▎                                                                      | 962/3000 [02:38<06:09,  5.51it/s]
+{'loss': 3.2375, 'learning_rate': 3.4000000000000007e-05, 'epoch': 0.19}
+
+ 33%|█████████████████████████████████▊                                                                      | 977/3000 [02:40<04:06,  8.20it/s]
+
+ 33%|██████████████████████████████████▍                                                                     | 993/3000 [02:42<04:05,  8.16it/s]
+{'loss': 2.4965, 'learning_rate': 3.35e-05, 'epoch': 0.2}
+ 33%|██████████████████████████████████▎                                                                    | 1000/3000 [02:43<04:28,  7.45it/s]***** Running Evaluation *****
+  Num examples = 50
+  Batch size = 16
+
+
+ 75%|█████████████████████████████████████████████████████████████████████████████████▊                           | 3/4 [00:19<00:06,  6.88s/it]
+
+{'eval_rouge-1': 29.141251999999998, 'eval_rouge-2': 9.920222, 'eval_rouge-l': 23.998093999999995, 'eval_bleu-4': 0.05701373563725462, 'eval_runtime': 37.9064, 'eval_samples_per_second': 1.319, 'eval_steps_per_second': 0.106, 'epoch': 0.2}
+Saving model checkpoint to ../darkword-ChatGLM3-6B/checkpoint-1000
+[2024-03-19 07:11:39,121] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step1000 is about to be saved!
+[2024-03-19 07:11:39,134] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: ../darkword-ChatGLM3-6B/checkpoint-1000/global_step1000/mp_rank_00_model_states.pt
+[2024-03-19 07:11:39,134] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-1000/global_step1000/mp_rank_00_model_states.pt...
+[2024-03-19 07:11:39,149] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-1000/global_step1000/mp_rank_00_model_states.pt.
+[2024-03-19 07:11:39,150] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-1000/global_step1000/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-19 07:11:39,217] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-1000/global_step1000/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-19 07:11:39,218] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved ../darkword-ChatGLM3-6B/checkpoint-1000/global_step1000/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-19 07:11:39,218] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step1000 is ready now!
+loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--THUDM--chatglm3-6b/snapshots/9addbe01105ca1939dd60a0e5866a1812be9daea/config.json
+Model config ChatGLMConfig {
+  "_name_or_path": "THUDM/chatglm3-6b",
+  "add_bias_linear": false,
+  "add_qkv_bias": true,
+  "apply_query_key_layer_scaling": true,
+  "apply_residual_connection_post_layernorm": false,
+  "architectures": [
+    "ChatGLMModel"
+  ],
+  "attention_dropout": 0.0,
+  "attention_softmax_in_fp32": true,
+  "auto_map": {
+    "AutoConfig": "THUDM/chatglm3-6b--configuration_chatglm.ChatGLMConfig",
+    "AutoModel": "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",
+    "AutoModelForCausalLM": "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",
+    "AutoModelForSeq2SeqLM": "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",
+    "AutoModelForSequenceClassification": "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForSequenceClassification"
+  },
+  "bias_dropout_fusion": true,
+  "classifier_dropout": null,
+  "eos_token_id": 2,
+  "ffn_hidden_size": 13696,
+  "fp32_residual_connection": false,
+  "hidden_dropout": 0.0,
+  "hidden_size": 4096,
+  "kv_channels": 128,
+  "layernorm_epsilon": 1e-05,
+  "model_type": "chatglm",
+  "multi_query_attention": true,
+  "multi_query_group_num": 2,
+  "num_attention_heads": 32,
+  "num_layers": 28,
+  "original_rope": true,
+  "pad_token_id": 0,
+  "padded_vocab_size": 65024,
+  "post_layer_norm": true,
+  "pre_seq_len": null,
+  "prefix_projection": false,
+  "quantization_bit": 0,
+  "rmsnorm": true,
+  "seq_length": 8192,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65024
+}
+tokenizer config file saved in ../darkword-ChatGLM3-6B/checkpoint-1000/tokenizer_config.json
+Special tokens file saved in ../darkword-ChatGLM3-6B/checkpoint-1000/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+ 34%|█████████████████████████████████▊                                                                   | 1006/3000 [03:28<1:18:49,  2.37s/it]
+ 34%|███████████████████████████████████                                                                    | 1023/3000 [03:30<04:10,  7.90it/s]
+ 34%|███████████████████████████████████                                                                    | 1023/3000 [03:30<04:10,  7.90it/s]
+{'loss': 2.3604, 'learning_rate': 3.3e-05, 'epoch': 0.2}
+ 35%|███████████████████████████████████▌                                                                   | 1036/3000 [03:32<05:26,  6.02it/s]
+ 35%|███████████████████████████████████▌                                                                   | 1036/3000 [03:32<05:26,  6.02it/s]
+ 35%|████████████████████████████████████                                                                   | 1050/3000 [03:34<04:26,  7.31it/s]
+ 35%|████████████████████████████████████                                                                   | 1050/3000 [03:34<04:26,  7.31it/s]
+{'loss': 2.4493, 'learning_rate': 3.2500000000000004e-05, 'epoch': 0.21}
+ 36%|████████████████████████████████████▌                                                                  | 1065/3000 [03:36<04:12,  7.66it/s]
+ 36%|████████████████████████████████████▌                                                                  | 1065/3000 [03:36<04:12,  7.66it/s]
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.8601, 'learning_rate': 3.2000000000000005e-05, 'epoch': 0.22}
+{'loss': 2.7402, 'learning_rate': 3.183333333333334e-05, 'epoch': 0.22}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4259, 'learning_rate': 3.1666666666666666e-05, 'epoch': 0.22}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.9305, 'learning_rate': 3.15e-05, 'epoch': 0.22}
+{'loss': 2.2671, 'learning_rate': 3.1333333333333334e-05, 'epoch': 0.22}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2936, 'learning_rate': 3.116666666666667e-05, 'epoch': 0.23}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4877, 'learning_rate': 3.1e-05, 'epoch': 0.23}
+{'loss': 2.7994, 'learning_rate': 3.0833333333333335e-05, 'epoch': 0.23}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.7119, 'learning_rate': 3.066666666666667e-05, 'epoch': 0.23}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5537, 'learning_rate': 3.05e-05, 'epoch': 0.23}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6716, 'learning_rate': 3.0333333333333337e-05, 'epoch': 0.24}
+{'loss': 2.6645, 'learning_rate': 3.016666666666667e-05, 'epoch': 0.24}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5726, 'learning_rate': 3e-05, 'epoch': 0.24}
+{'loss': 2.6172, 'learning_rate': 2.9833333333333335e-05, 'epoch': 0.24}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4921, 'learning_rate': 2.9666666666666672e-05, 'epoch': 0.24}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.524, 'learning_rate': 2.95e-05, 'epoch': 0.25}
+{'loss': 2.5824, 'learning_rate': 2.9333333333333336e-05, 'epoch': 0.25}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.7435, 'learning_rate': 2.916666666666667e-05, 'epoch': 0.25}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.3402, 'learning_rate': 2.9e-05, 'epoch': 0.25}
+{'loss': 2.7963, 'learning_rate': 2.8833333333333334e-05, 'epoch': 0.25}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.9179, 'learning_rate': 2.8666666666666668e-05, 'epoch': 0.26}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.9119, 'learning_rate': 2.8499999999999998e-05, 'epoch': 0.26}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.7371, 'learning_rate': 2.8333333333333335e-05, 'epoch': 0.26}
+{'loss': 2.5705, 'learning_rate': 2.816666666666667e-05, 'epoch': 0.26}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.8977, 'learning_rate': 2.8000000000000003e-05, 'epoch': 0.26}
+{'loss': 2.8991, 'learning_rate': 2.7833333333333333e-05, 'epoch': 0.27}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6019, 'learning_rate': 2.7666666666666667e-05, 'epoch': 0.27}
+{'loss': 2.3458, 'learning_rate': 2.7500000000000004e-05, 'epoch': 0.27}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.9583, 'learning_rate': 2.733333333333333e-05, 'epoch': 0.27}
+{'loss': 2.0651, 'learning_rate': 2.716666666666667e-05, 'epoch': 0.27}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5819, 'learning_rate': 2.7000000000000002e-05, 'epoch': 0.28}
+{'loss': 2.4348, 'learning_rate': 2.6833333333333333e-05, 'epoch': 0.28}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.792, 'learning_rate': 2.6666666666666667e-05, 'epoch': 0.28}
+{'loss': 2.4441, 'learning_rate': 2.6500000000000004e-05, 'epoch': 0.28}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4591, 'learning_rate': 2.633333333333333e-05, 'epoch': 0.28}
+{'loss': 2.1967, 'learning_rate': 2.6166666666666668e-05, 'epoch': 0.29}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.628, 'learning_rate': 2.6000000000000002e-05, 'epoch': 0.29}
+{'loss': 2.835, 'learning_rate': 2.5833333333333336e-05, 'epoch': 0.29}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.7779, 'learning_rate': 2.5666666666666666e-05, 'epoch': 0.29}
+{'loss': 2.2233, 'learning_rate': 2.5500000000000003e-05, 'epoch': 0.29}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6088, 'learning_rate': 2.5333333333333337e-05, 'epoch': 0.3}
+{'loss': 2.1269, 'learning_rate': 2.5166666666666667e-05, 'epoch': 0.3}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5652, 'learning_rate': 2.5e-05, 'epoch': 0.3}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+{'eval_rouge-1': 33.338232, 'eval_rouge-2': 14.123026, 'eval_rouge-l': 28.467479999999995, 'eval_bleu-4': 0.09874657691217888, 'eval_runtime': 26.7615, 'eval_samples_per_second': 1.868, 'eval_steps_per_second': 0.149, 'epoch': 0.3}
+ 36%|█████████████████████████████████████                                                                  | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+[2024-03-19 07:13:13,812] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step1500 is about to be saved!
+[2024-03-19 07:13:13,821] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: ../darkword-ChatGLM3-6B/checkpoint-1500/global_step1500/mp_rank_00_model_states.pt
+[2024-03-19 07:13:13,821] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-1500/global_step1500/mp_rank_00_model_states.pt...
+[2024-03-19 07:13:13,840] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-1500/global_step1500/mp_rank_00_model_states.pt.
+[2024-03-19 07:13:13,841] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-1500/global_step1500/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-19 07:13:13,912] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-1500/global_step1500/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-19 07:13:13,913] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved ../darkword-ChatGLM3-6B/checkpoint-1500/global_step1500/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-19 07:13:13,913] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step1500 is ready now!
+{'loss': 2.3634, 'learning_rate': 2.4833333333333335e-05, 'epoch': 0.3}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6044, 'learning_rate': 2.466666666666667e-05, 'epoch': 0.3}
+{'loss': 2.4146, 'learning_rate': 2.45e-05, 'epoch': 0.31}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4467, 'learning_rate': 2.4333333333333336e-05, 'epoch': 0.31}
+{'loss': 2.3657, 'learning_rate': 2.4166666666666667e-05, 'epoch': 0.31}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.8016, 'learning_rate': 2.4e-05, 'epoch': 0.31}
+{'loss': 2.4473, 'learning_rate': 2.3833333333333334e-05, 'epoch': 0.31}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5297, 'learning_rate': 2.3666666666666668e-05, 'epoch': 0.32}
+{'loss': 2.5765, 'learning_rate': 2.35e-05, 'epoch': 0.32}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.9202, 'learning_rate': 2.3333333333333336e-05, 'epoch': 0.32}
+{'loss': 2.5166, 'learning_rate': 2.3166666666666666e-05, 'epoch': 0.32}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.7663, 'learning_rate': 2.3000000000000003e-05, 'epoch': 0.32}
+{'loss': 2.1427, 'learning_rate': 2.2833333333333334e-05, 'epoch': 0.33}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6825, 'learning_rate': 2.2666666666666668e-05, 'epoch': 0.33}
+{'loss': 2.4083, 'learning_rate': 2.25e-05, 'epoch': 0.33}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6217, 'learning_rate': 2.2333333333333335e-05, 'epoch': 0.33}
+{'loss': 2.5815, 'learning_rate': 2.216666666666667e-05, 'epoch': 0.33}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6755, 'learning_rate': 2.2000000000000003e-05, 'epoch': 0.34}
+{'loss': 2.2981, 'learning_rate': 2.1833333333333333e-05, 'epoch': 0.34}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.823, 'learning_rate': 2.1666666666666667e-05, 'epoch': 0.34}
+{'loss': 2.7146, 'learning_rate': 2.15e-05, 'epoch': 0.34}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.3789, 'learning_rate': 2.1333333333333335e-05, 'epoch': 0.34}
+{'loss': 2.5564, 'learning_rate': 2.116666666666667e-05, 'epoch': 0.35}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.3929, 'learning_rate': 2.1e-05, 'epoch': 0.35}
+{'loss': 2.3981, 'learning_rate': 2.0833333333333336e-05, 'epoch': 0.35}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6182, 'learning_rate': 2.0666666666666666e-05, 'epoch': 0.35}
+{'loss': 2.5703, 'learning_rate': 2.05e-05, 'epoch': 0.35}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6398, 'learning_rate': 2.0333333333333334e-05, 'epoch': 0.36}
+{'loss': 2.3299, 'learning_rate': 2.0166666666666668e-05, 'epoch': 0.36}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2904, 'learning_rate': 2e-05, 'epoch': 0.36}
+{'loss': 2.2822, 'learning_rate': 1.9833333333333335e-05, 'epoch': 0.36}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2683, 'learning_rate': 1.9666666666666666e-05, 'epoch': 0.36}
+{'loss': 2.9103, 'learning_rate': 1.9500000000000003e-05, 'epoch': 0.37}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6521, 'learning_rate': 1.9333333333333333e-05, 'epoch': 0.37}
+{'loss': 2.35, 'learning_rate': 1.9166666666666667e-05, 'epoch': 0.37}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2707, 'learning_rate': 1.9e-05, 'epoch': 0.37}
+{'loss': 2.1426, 'learning_rate': 1.8833333333333335e-05, 'epoch': 0.37}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.1263, 'learning_rate': 1.866666666666667e-05, 'epoch': 0.38}
+{'loss': 2.5923, 'learning_rate': 1.85e-05, 'epoch': 0.38}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5594, 'learning_rate': 1.8333333333333333e-05, 'epoch': 0.38}
+{'loss': 2.7534, 'learning_rate': 1.8166666666666667e-05, 'epoch': 0.38}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.1748, 'learning_rate': 1.8e-05, 'epoch': 0.38}
+{'loss': 2.4216, 'learning_rate': 1.7833333333333334e-05, 'epoch': 0.38}
+{'loss': 2.1201, 'learning_rate': 1.7666666666666668e-05, 'epoch': 0.39}
+{'loss': 2.685, 'learning_rate': 1.75e-05, 'epoch': 0.39}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.3486, 'learning_rate': 1.7333333333333336e-05, 'epoch': 0.39}
+{'loss': 2.6397, 'learning_rate': 1.7166666666666666e-05, 'epoch': 0.39}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.3077, 'learning_rate': 1.7000000000000003e-05, 'epoch': 0.39}
+{'loss': 2.5211, 'learning_rate': 1.6833333333333334e-05, 'epoch': 0.4}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 3.2428, 'learning_rate': 1.6666666666666667e-05, 'epoch': 0.4}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'eval_rouge-1': 34.605191999999995, 'eval_rouge-2': 16.256296, 'eval_rouge-l': 28.726770000000002, 'eval_bleu-4': 0.11134873386956437, 'eval_runtime': 28.827, 'eval_samples_per_second': 1.734, 'eval_steps_per_second': 0.139, 'epoch': 0.4}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+[2024-03-19 07:14:39,731] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step2000 is about to be saved!
+[2024-03-19 07:14:39,739] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: ../darkword-ChatGLM3-6B/checkpoint-2000/global_step2000/mp_rank_00_model_states.pt
+[2024-03-19 07:14:39,739] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-2000/global_step2000/mp_rank_00_model_states.pt...
+[2024-03-19 07:14:39,788] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-2000/global_step2000/mp_rank_00_model_states.pt.
+[2024-03-19 07:14:39,789] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-2000/global_step2000/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-19 07:14:39,836] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-2000/global_step2000/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-19 07:14:39,837] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved ../darkword-ChatGLM3-6B/checkpoint-2000/global_step2000/zero_pp_rank_0_mp_rank_00_optim_states.pt
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.7876, 'learning_rate': 1.65e-05, 'epoch': 0.4}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5838, 'learning_rate': 1.6333333333333335e-05, 'epoch': 0.4}
+{'loss': 1.7416, 'learning_rate': 1.6166666666666665e-05, 'epoch': 0.4}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6703, 'learning_rate': 1.6000000000000003e-05, 'epoch': 0.41}
+{'loss': 2.1123, 'learning_rate': 1.5833333333333333e-05, 'epoch': 0.41}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.6756, 'learning_rate': 1.5666666666666667e-05, 'epoch': 0.41}
+{'loss': 2.2621, 'learning_rate': 1.55e-05, 'epoch': 0.41}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2218, 'learning_rate': 1.5333333333333334e-05, 'epoch': 0.41}
+{'loss': 2.4512, 'learning_rate': 1.5166666666666668e-05, 'epoch': 0.42}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.8053, 'learning_rate': 1.5e-05, 'epoch': 0.42}
+{'loss': 3.1566, 'learning_rate': 1.4833333333333336e-05, 'epoch': 0.42}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.8858, 'learning_rate': 1.4666666666666668e-05, 'epoch': 0.42}
+{'loss': 2.4889, 'learning_rate': 1.45e-05, 'epoch': 0.42}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5708, 'learning_rate': 1.4333333333333334e-05, 'epoch': 0.43}
+{'loss': 2.3953, 'learning_rate': 1.4166666666666668e-05, 'epoch': 0.43}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4371, 'learning_rate': 1.4000000000000001e-05, 'epoch': 0.43}
+{'loss': 2.3095, 'learning_rate': 1.3833333333333334e-05, 'epoch': 0.43}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2805, 'learning_rate': 1.3666666666666666e-05, 'epoch': 0.43}
+{'loss': 1.7251, 'learning_rate': 1.3500000000000001e-05, 'epoch': 0.44}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.8219, 'learning_rate': 1.3333333333333333e-05, 'epoch': 0.44}
+{'loss': 2.3299, 'learning_rate': 1.3166666666666665e-05, 'epoch': 0.44}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2509, 'learning_rate': 1.3000000000000001e-05, 'epoch': 0.44}
+{'loss': 2.3789, 'learning_rate': 1.2833333333333333e-05, 'epoch': 0.44}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.3015, 'learning_rate': 1.2666666666666668e-05, 'epoch': 0.45}
+{'loss': 2.7542, 'learning_rate': 1.25e-05, 'epoch': 0.45}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.578, 'learning_rate': 1.2333333333333334e-05, 'epoch': 0.45}
+{'loss': 2.3597, 'learning_rate': 1.2166666666666668e-05, 'epoch': 0.45}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4866, 'learning_rate': 1.2e-05, 'epoch': 0.45}
+{'loss': 2.5844, 'learning_rate': 1.1833333333333334e-05, 'epoch': 0.46}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.9042, 'learning_rate': 1.1666666666666668e-05, 'epoch': 0.46}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2134, 'learning_rate': 1.1500000000000002e-05, 'epoch': 0.46}
+{'loss': 2.0401, 'learning_rate': 1.1333333333333334e-05, 'epoch': 0.46}
+{'loss': 1.9671, 'learning_rate': 1.1166666666666668e-05, 'epoch': 0.46}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2126, 'learning_rate': 1.1000000000000001e-05, 'epoch': 0.47}
+{'loss': 2.454, 'learning_rate': 1.0833333333333334e-05, 'epoch': 0.47}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.8225, 'learning_rate': 1.0666666666666667e-05, 'epoch': 0.47}
+{'loss': 2.7715, 'learning_rate': 1.05e-05, 'epoch': 0.47}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.9083, 'learning_rate': 1.0333333333333333e-05, 'epoch': 0.47}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.7848, 'learning_rate': 1.0166666666666667e-05, 'epoch': 0.48}
+{'loss': 2.433, 'learning_rate': 1e-05, 'epoch': 0.48}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.1992, 'learning_rate': 9.833333333333333e-06, 'epoch': 0.48}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5342, 'learning_rate': 9.666666666666667e-06, 'epoch': 0.48}
+{'loss': 1.8721, 'learning_rate': 9.5e-06, 'epoch': 0.48}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2706, 'learning_rate': 9.333333333333334e-06, 'epoch': 0.49}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4395, 'learning_rate': 9.166666666666666e-06, 'epoch': 0.49}
+{'loss': 2.0776, 'learning_rate': 9e-06, 'epoch': 0.49}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6863, 'learning_rate': 8.833333333333334e-06, 'epoch': 0.49}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.0961, 'learning_rate': 8.666666666666668e-06, 'epoch': 0.49}
+{'loss': 1.7805, 'learning_rate': 8.500000000000002e-06, 'epoch': 0.5}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.8399, 'learning_rate': 8.333333333333334e-06, 'epoch': 0.5}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'eval_rouge-1': 36.846714, 'eval_rouge-2': 18.934254, 'eval_rouge-l': 31.202906, 'eval_bleu-4': 0.14253854058294332, 'eval_runtime': 36.8472, 'eval_samples_per_second': 1.357, 'eval_steps_per_second': 0.109, 'epoch': 0.5}
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "padded_vocab_size": 65024,lm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",eneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+[2024-03-19 07:16:17,620] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step2500 is about to be saved!
+[2024-03-19 07:16:17,629] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: ../darkword-ChatGLM3-6B/checkpoint-2500/global_step2500/mp_rank_00_model_states.pt
+[2024-03-19 07:16:17,629] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-2500/global_step2500/mp_rank_00_model_states.pt...
+[2024-03-19 07:16:17,650] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-2500/global_step2500/mp_rank_00_model_states.pt.
+[2024-03-19 07:16:17,651] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-2500/global_step2500/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-19 07:16:17,746] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-2500/global_step2500/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-19 07:16:17,747] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved ../darkword-ChatGLM3-6B/checkpoint-2500/global_step2500/zero_pp_rank_0_mp_rank_00_optim_states.pt
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.1541, 'learning_rate': 8.166666666666668e-06, 'epoch': 0.5}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.8227, 'learning_rate': 8.000000000000001e-06, 'epoch': 0.5}
+{'loss': 2.1187, 'learning_rate': 7.833333333333333e-06, 'epoch': 0.5}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.7106, 'learning_rate': 7.666666666666667e-06, 'epoch': 0.51}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2689, 'learning_rate': 7.5e-06, 'epoch': 0.51}
+{'loss': 2.7106, 'learning_rate': 7.333333333333334e-06, 'epoch': 0.51}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2485, 'learning_rate': 7.166666666666667e-06, 'epoch': 0.51}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.3457, 'learning_rate': 7.000000000000001e-06, 'epoch': 0.51}
+{'loss': 2.5488, 'learning_rate': 6.833333333333333e-06, 'epoch': 0.52}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.6726, 'learning_rate': 6.666666666666667e-06, 'epoch': 0.52}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.8248, 'learning_rate': 6.5000000000000004e-06, 'epoch': 0.52}
+{'loss': 2.4085, 'learning_rate': 6.333333333333334e-06, 'epoch': 0.52}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.7404, 'learning_rate': 6.166666666666667e-06, 'epoch': 0.52}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.8839, 'learning_rate': 6e-06, 'epoch': 0.53}
+{'loss': 2.346, 'learning_rate': 5.833333333333334e-06, 'epoch': 0.53}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.3766, 'learning_rate': 5.666666666666667e-06, 'epoch': 0.53}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4534, 'learning_rate': 5.500000000000001e-06, 'epoch': 0.53}
+{'loss': 2.7021, 'learning_rate': 5.333333333333334e-06, 'epoch': 0.53}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.5678, 'learning_rate': 5.166666666666667e-06, 'epoch': 0.54}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2267, 'learning_rate': 5e-06, 'epoch': 0.54}
+{'loss': 2.9322, 'learning_rate': 4.833333333333333e-06, 'epoch': 0.54}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4107, 'learning_rate': 4.666666666666667e-06, 'epoch': 0.54}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6281, 'learning_rate': 4.5e-06, 'epoch': 0.54}
+{'loss': 3.1342, 'learning_rate': 4.333333333333334e-06, 'epoch': 0.55}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.954, 'learning_rate': 4.166666666666667e-06, 'epoch': 0.55}
+{'loss': 1.8672, 'learning_rate': 4.000000000000001e-06, 'epoch': 0.55}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.0215, 'learning_rate': 3.833333333333334e-06, 'epoch': 0.55}
+{'loss': 2.5224, 'learning_rate': 3.666666666666667e-06, 'epoch': 0.55}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2333, 'learning_rate': 3.5000000000000004e-06, 'epoch': 0.56}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.4658, 'learning_rate': 3.3333333333333333e-06, 'epoch': 0.56}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6729, 'learning_rate': 3.166666666666667e-06, 'epoch': 0.56}
+{'loss': 2.8996, 'learning_rate': 3e-06, 'epoch': 0.56}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.4904, 'learning_rate': 2.8333333333333335e-06, 'epoch': 0.56}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6416, 'learning_rate': 2.666666666666667e-06, 'epoch': 0.57}
+{'loss': 2.3384, 'learning_rate': 2.5e-06, 'epoch': 0.57}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.2309, 'learning_rate': 2.3333333333333336e-06, 'epoch': 0.57}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.5279, 'learning_rate': 2.166666666666667e-06, 'epoch': 0.57}
+{'loss': 2.1621, 'learning_rate': 2.0000000000000003e-06, 'epoch': 0.57}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.1431, 'learning_rate': 1.8333333333333335e-06, 'epoch': 0.58}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.6816, 'learning_rate': 1.6666666666666667e-06, 'epoch': 0.58}
+{'loss': 1.9279, 'learning_rate': 1.5e-06, 'epoch': 0.58}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.811, 'learning_rate': 1.3333333333333334e-06, 'epoch': 0.58}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.3484, 'learning_rate': 1.1666666666666668e-06, 'epoch': 0.58}
+{'loss': 2.451, 'learning_rate': 1.0000000000000002e-06, 'epoch': 0.59}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.1613, 'learning_rate': 8.333333333333333e-07, 'epoch': 0.59}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 3.008, 'learning_rate': 6.666666666666667e-07, 'epoch': 0.59}
+{'loss': 2.4975, 'learning_rate': 5.000000000000001e-07, 'epoch': 0.59}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 2.8007, 'learning_rate': 3.3333333333333335e-07, 'epoch': 0.59}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'loss': 1.7537, 'learning_rate': 1.6666666666666668e-07, 'epoch': 0.6}
+{'loss': 2.177, 'learning_rate': 0.0, 'epoch': 0.6}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+{'eval_rouge-1': 36.590316, 'eval_rouge-2': 19.032743999999997, 'eval_rouge-l': 31.181736, 'eval_bleu-4': 0.14273860102541325, 'eval_runtime': 35.323, 'eval_samples_per_second': 1.416, 'eval_steps_per_second': 0.113, 'epoch': 0.6}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+[2024-03-19 07:18:05,249] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step3000 is about to be saved!
+[2024-03-19 07:18:05,257] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: ../darkword-ChatGLM3-6B/checkpoint-3000/global_step3000/mp_rank_00_model_states.pt
+[2024-03-19 07:18:05,258] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-3000/global_step3000/mp_rank_00_model_states.pt...
+[2024-03-19 07:18:05,277] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-3000/global_step3000/mp_rank_00_model_states.pt.
+[2024-03-19 07:18:05,278] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ../darkword-ChatGLM3-6B/checkpoint-3000/global_step3000/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-19 07:18:05,329] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ../darkword-ChatGLM3-6B/checkpoint-3000/global_step3000/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-19 07:18:05,329] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved ../darkword-ChatGLM3-6B/checkpoint-3000/global_step3000/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-19 07:18:05,329] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step3000 is ready now!
+{'train_runtime': 601.2652, 'train_samples_per_second': 4.989, 'train_steps_per_second': 4.989, 'train_loss': 2.6647164103190106, 'epoch': 0.6}
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
+  "post_layer_norm": true,: "THUDM/chatglm3-6b--modeling_chatglm.ChatGLMForConditionalGeneration",          | 1081/3000 [03:38<03:41,  8.66it/s]
