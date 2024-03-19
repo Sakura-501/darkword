@@ -1,0 +1,14 @@
+2024-03-19 11:27:47 | INFO | controller | args: Namespace(host='localhost', port=21001, dispatch_method='shortest_queue', ssl=False)
+2024-03-19 11:27:47 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m4053423[0m]
+2024-03-19 11:27:47 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-03-19 11:27:47 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-03-19 11:27:47 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21001[0m (Press CTRL+C to quit)
+2024-03-19 11:27:57 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-03-19 11:27:57 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-03-19 11:27:57 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-03-19 11:27:57 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m4053423[0m]
+2024-03-19 11:28:04 | ERROR | stderr | Exception ignored in: <module 'threading' from '/home/w1nd/.conda/envs/llm/lib/python3.10/threading.py'>
+2024-03-19 11:28:04 | ERROR | stderr | Traceback (most recent call last):
+2024-03-19 11:28:04 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-03-19 11:28:04 | ERROR | stderr |     lock.acquire()
+2024-03-19 11:28:04 | ERROR | stderr | KeyboardInterrupt:

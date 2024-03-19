@@ -1,0 +1,66 @@
+2024-03-19 11:30:48 | INFO | gradio_web_server | args: Namespace(host='0.0.0.0', port=None, share=False, controller_url='http://localhost:21001', concurrency_count=10, model_list_mode='once', moderate=False, show_terms_of_use=False, register_api_endpoint_file=None, gradio_auth_path=None, gradio_root_path=None)
+2024-03-19 11:30:48 | ERROR | stderr | Traceback (most recent call last):
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/urllib3/connection.py", line 159, in _new_conn
+2024-03-19 11:30:48 | ERROR | stderr |     conn = connection.create_connection(
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/urllib3/util/connection.py", line 84, in create_connection
+2024-03-19 11:30:48 | ERROR | stderr |     raise err
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/urllib3/util/connection.py", line 74, in create_connection
+2024-03-19 11:30:48 | ERROR | stderr |     sock.connect(sa)
+2024-03-19 11:30:48 | ERROR | stderr | ConnectionRefusedError: [Errno 111] Connection refused
+2024-03-19 11:30:48 | ERROR | stderr | 
+2024-03-19 11:30:48 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2024-03-19 11:30:48 | ERROR | stderr | 
+2024-03-19 11:30:48 | ERROR | stderr | Traceback (most recent call last):
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+2024-03-19 11:30:48 | ERROR | stderr |     httplib_response = self._make_request(
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+2024-03-19 11:30:48 | ERROR | stderr |     conn.request(method, url, **httplib_request_kw)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/http/client.py", line 1283, in request
+2024-03-19 11:30:48 | ERROR | stderr |     self._send_request(method, url, body, headers, encode_chunked)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/http/client.py", line 1329, in _send_request
+2024-03-19 11:30:48 | ERROR | stderr |     self.endheaders(body, encode_chunked=encode_chunked)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/http/client.py", line 1278, in endheaders
+2024-03-19 11:30:48 | ERROR | stderr |     self._send_output(message_body, encode_chunked=encode_chunked)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/http/client.py", line 1038, in _send_output
+2024-03-19 11:30:48 | ERROR | stderr |     self.send(msg)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/http/client.py", line 976, in send
+2024-03-19 11:30:48 | ERROR | stderr |     self.connect()
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/urllib3/connection.py", line 187, in connect
+2024-03-19 11:30:48 | ERROR | stderr |     conn = self._new_conn()
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/urllib3/connection.py", line 171, in _new_conn
+2024-03-19 11:30:48 | ERROR | stderr |     raise NewConnectionError(
+2024-03-19 11:30:48 | ERROR | stderr | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa675f64070>: Failed to establish a new connection: [Errno 111] Connection refused
+2024-03-19 11:30:48 | ERROR | stderr | 
+2024-03-19 11:30:48 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2024-03-19 11:30:48 | ERROR | stderr | 
+2024-03-19 11:30:48 | ERROR | stderr | Traceback (most recent call last):
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+2024-03-19 11:30:48 | ERROR | stderr |     resp = conn.urlopen(
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/urllib3/connectionpool.py", line 726, in urlopen
+2024-03-19 11:30:48 | ERROR | stderr |     retries = retries.increment(
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/urllib3/util/retry.py", line 446, in increment
+2024-03-19 11:30:48 | ERROR | stderr |     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+2024-03-19 11:30:48 | ERROR | stderr | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=21001): Max retries exceeded with url: /refresh_all_workers (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa675f64070>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-03-19 11:30:48 | ERROR | stderr | 
+2024-03-19 11:30:48 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2024-03-19 11:30:48 | ERROR | stderr | 
+2024-03-19 11:30:48 | ERROR | stderr | Traceback (most recent call last):
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+2024-03-19 11:30:48 | ERROR | stderr |     return _run_code(code, main_globals, None,
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/runpy.py", line 86, in _run_code
+2024-03-19 11:30:48 | ERROR | stderr |     exec(code, run_globals)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/fastchat/serve/gradio_web_server.py", line 865, in <module>
+2024-03-19 11:30:48 | ERROR | stderr |     models, all_models = get_model_list(
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/fastchat/serve/gradio_web_server.py", line 133, in get_model_list
+2024-03-19 11:30:48 | ERROR | stderr |     ret = requests.post(controller_url + "/refresh_all_workers")
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/requests/api.py", line 117, in post
+2024-03-19 11:30:48 | ERROR | stderr |     return request('post', url, data=data, json=json, **kwargs)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/requests/api.py", line 61, in request
+2024-03-19 11:30:48 | ERROR | stderr |     return session.request(method=method, url=url, **kwargs)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+2024-03-19 11:30:48 | ERROR | stderr |     resp = self.send(prep, **send_kwargs)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+2024-03-19 11:30:48 | ERROR | stderr |     r = adapter.send(request, **kwargs)
+2024-03-19 11:30:48 | ERROR | stderr |   File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+2024-03-19 11:30:48 | ERROR | stderr |     raise ConnectionError(e, request=request)
+2024-03-19 11:30:48 | ERROR | stderr | requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=21001): Max retries exceeded with url: /refresh_all_workers (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa675f64070>: Failed to establish a new connection: [Errno 111] Connection refused'))

@@ -1,7 +1,8 @@
+peft==0.8.0
 Setting eos_token is not supported, use the default one.
 Setting pad_token is not supported, use the default one.
 Setting unk_token is not supported, use the default one.
-Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:01<00:06,  1.03s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:02<00:04,  1.00it/s]Loading checkpoint shards:  43%|████▎     | 3/7 [00:02<00:03,  1.04it/s]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:03<00:02,  1.07it/s]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:04<00:01,  1.07it/s]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:05<00:00,  1.00it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:06<00:00,  1.15it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:06<00:00,  1.08it/s]
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:01<00:06,  1.07s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:02<00:05,  1.03s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:02<00:03,  1.04it/s]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:03<00:02,  1.09it/s]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:04<00:01,  1.10it/s]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:05<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:06<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:06<00:00,  1.09it/s]
 trainable params: 1,949,696 || all params: 6,245,533,696 || trainable%: 0.031217444255383614
 --> Model
 
@@ -20,35 +21,35 @@ test_dataset: Dataset({
     num_rows: 557
 })
 max_steps is given, it will override any value given in num_train_epochs
-[2024-03-19 11:22:30,461] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2024-03-19 11:22:30,660] [INFO] [logging.py:96:log_dist] [Rank -1] DeepSpeed info: version=0.13.2, git-hash=unknown, git-branch=unknown
-[2024-03-19 11:22:30,660] [INFO] [comm.py:637:init_distributed] cdb=None
-[2024-03-19 11:22:39,157] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
-[2024-03-19 11:22:39,159] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
-[2024-03-19 11:22:39,159] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
-[2024-03-19 11:22:39,161] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
-[2024-03-19 11:22:39,161] [INFO] [utils.py:56:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
-[2024-03-19 11:22:39,161] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.float32 ZeRO stage 2 optimizer
-[2024-03-19 11:22:39,161] [INFO] [stage_1_and_2.py:149:__init__] Reduce bucket size 500000000
-[2024-03-19 11:22:39,161] [INFO] [stage_1_and_2.py:150:__init__] Allgather bucket size 500000000
-[2024-03-19 11:22:39,161] [INFO] [stage_1_and_2.py:151:__init__] CPU Offload: False
-[2024-03-19 11:22:39,161] [INFO] [stage_1_and_2.py:152:__init__] Round robin gradient partitioning: False
-[2024-03-19 11:22:39,382] [INFO] [utils.py:800:see_memory_usage] Before initializing optimizer states
-[2024-03-19 11:22:39,383] [INFO] [utils.py:801:see_memory_usage] MA 11.67 GB         Max_MA 11.67 GB         CA 11.68 GB         Max_CA 12 GB 
-[2024-03-19 11:22:39,383] [INFO] [utils.py:808:see_memory_usage] CPU Virtual Memory:  used = 305.75 GB, percent = 60.7%
-[2024-03-19 11:22:39,977] [INFO] [utils.py:800:see_memory_usage] After initializing optimizer states
-[2024-03-19 11:22:39,978] [INFO] [utils.py:801:see_memory_usage] MA 11.67 GB         Max_MA 11.68 GB         CA 11.7 GB         Max_CA 12 GB 
-[2024-03-19 11:22:39,978] [INFO] [utils.py:808:see_memory_usage] CPU Virtual Memory:  used = 305.71 GB, percent = 60.7%
-[2024-03-19 11:22:39,978] [INFO] [stage_1_and_2.py:539:__init__] optimizer state initialized
-[2024-03-19 11:22:40,128] [INFO] [utils.py:800:see_memory_usage] After initializing ZeRO optimizer
-[2024-03-19 11:22:40,128] [INFO] [utils.py:801:see_memory_usage] MA 11.67 GB         Max_MA 11.67 GB         CA 11.7 GB         Max_CA 12 GB 
-[2024-03-19 11:22:40,129] [INFO] [utils.py:808:see_memory_usage] CPU Virtual Memory:  used = 305.76 GB, percent = 60.7%
-[2024-03-19 11:22:40,130] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
-[2024-03-19 11:22:40,130] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
-[2024-03-19 11:22:40,130] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
-[2024-03-19 11:22:40,130] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[5e-05], mom=[(0.9, 0.999)]
-[2024-03-19 11:22:40,131] [INFO] [config.py:987:print] DeepSpeedEngine configuration:
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   activation_checkpointing_config  {
+[2024-03-19 12:27:01,443] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-19 12:27:01,637] [INFO] [logging.py:96:log_dist] [Rank -1] DeepSpeed info: version=0.13.2, git-hash=unknown, git-branch=unknown
+[2024-03-19 12:27:01,637] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-03-19 12:27:08,629] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-03-19 12:27:08,630] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-03-19 12:27:08,630] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-03-19 12:27:08,632] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2024-03-19 12:27:08,632] [INFO] [utils.py:56:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2024-03-19 12:27:08,633] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.float32 ZeRO stage 2 optimizer
+[2024-03-19 12:27:08,633] [INFO] [stage_1_and_2.py:149:__init__] Reduce bucket size 500000000
+[2024-03-19 12:27:08,633] [INFO] [stage_1_and_2.py:150:__init__] Allgather bucket size 500000000
+[2024-03-19 12:27:08,633] [INFO] [stage_1_and_2.py:151:__init__] CPU Offload: False
+[2024-03-19 12:27:08,633] [INFO] [stage_1_and_2.py:152:__init__] Round robin gradient partitioning: False
+[2024-03-19 12:27:09,341] [INFO] [utils.py:800:see_memory_usage] Before initializing optimizer states
+[2024-03-19 12:27:09,342] [INFO] [utils.py:801:see_memory_usage] MA 11.67 GB         Max_MA 11.67 GB         CA 11.68 GB         Max_CA 12 GB 
+[2024-03-19 12:27:09,342] [INFO] [utils.py:808:see_memory_usage] CPU Virtual Memory:  used = 307.64 GB, percent = 61.1%
+[2024-03-19 12:27:09,482] [INFO] [utils.py:800:see_memory_usage] After initializing optimizer states
+[2024-03-19 12:27:09,483] [INFO] [utils.py:801:see_memory_usage] MA 11.67 GB         Max_MA 11.68 GB         CA 11.7 GB         Max_CA 12 GB 
+[2024-03-19 12:27:09,483] [INFO] [utils.py:808:see_memory_usage] CPU Virtual Memory:  used = 307.71 GB, percent = 61.1%
+[2024-03-19 12:27:09,483] [INFO] [stage_1_and_2.py:539:__init__] optimizer state initialized
+[2024-03-19 12:27:09,614] [INFO] [utils.py:800:see_memory_usage] After initializing ZeRO optimizer
+[2024-03-19 12:27:09,615] [INFO] [utils.py:801:see_memory_usage] MA 11.67 GB         Max_MA 11.67 GB         CA 11.7 GB         Max_CA 12 GB 
+[2024-03-19 12:27:09,615] [INFO] [utils.py:808:see_memory_usage] CPU Virtual Memory:  used = 307.71 GB, percent = 61.1%
+[2024-03-19 12:27:09,616] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
+[2024-03-19 12:27:09,616] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-03-19 12:27:09,616] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2024-03-19 12:27:09,617] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[5e-05], mom=[(0.9, 0.999)]
+[2024-03-19 12:27:09,618] [INFO] [config.py:987:print] DeepSpeedEngine configuration:
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   activation_checkpointing_config  {
     "partition_activations": false, 
     "contiguous_memory_optimization": false, 
     "cpu_checkpointing": false, 
@@ -56,10 +57,10 @@ max_steps is given, it will override any value given in num_train_epochs
     "synchronize_checkpoint_boundary": false, 
     "profile": false
 }
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   amp_enabled .................. False
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   amp_params ................... False
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   autotuning_config ............ {
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   amp_enabled .................. False
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   amp_params ................... False
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   autotuning_config ............ {
     "enabled": false, 
     "start_step": null, 
     "end_step": null, 
@@ -84,32 +85,32 @@ max_steps is given, it will override any value given in num_train_epochs
     "min_train_micro_batch_size_per_gpu": 1, 
     "num_tuning_micro_batch_sizes": 3
 }
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   bfloat16_enabled ............. False
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   checkpoint_parallel_write_pipeline  False
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   checkpoint_tag_validation_enabled  True
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   checkpoint_tag_validation_fail  False
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7f170cccbb50>
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   communication_data_type ...... None
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   compile_config ............... enabled=False backend='inductor' kwargs={}
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   curriculum_enabled_legacy .... False
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   curriculum_params_legacy ..... False
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   data_efficiency_enabled ...... False
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   dataloader_drop_last ......... False
-[2024-03-19 11:22:40,132] [INFO] [config.py:991:print]   disable_allgather ............ False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   dump_state ................... False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   dynamic_loss_scale_args ...... None
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   eigenvalue_enabled ........... False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   eigenvalue_gas_boundary_resolution  1
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   eigenvalue_layer_name ........ bert.encoder.layer
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   eigenvalue_layer_num ......... 0
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   eigenvalue_max_iter .......... 100
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   eigenvalue_stability ......... 1e-06
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   eigenvalue_tol ............... 0.01
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   eigenvalue_verbose ........... False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   elasticity_enabled ........... False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   flops_profiler_config ........ {
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   bfloat16_enabled ............. False
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   checkpoint_parallel_write_pipeline  False
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   checkpoint_tag_validation_enabled  True
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   checkpoint_tag_validation_fail  False
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7f198c219210>
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   communication_data_type ...... None
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   compile_config ............... enabled=False backend='inductor' kwargs={}
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   curriculum_enabled_legacy .... False
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   curriculum_params_legacy ..... False
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-03-19 12:27:09,618] [INFO] [config.py:991:print]   data_efficiency_enabled ...... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   dataloader_drop_last ......... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   disable_allgather ............ False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   dump_state ................... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   dynamic_loss_scale_args ...... None
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   eigenvalue_enabled ........... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   eigenvalue_gas_boundary_resolution  1
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   eigenvalue_layer_num ......... 0
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   eigenvalue_max_iter .......... 100
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   eigenvalue_stability ......... 1e-06
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   eigenvalue_tol ............... 0.01
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   eigenvalue_verbose ........... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   elasticity_enabled ........... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   flops_profiler_config ........ {
     "enabled": false, 
     "recompute_fwd_factor": 0.0, 
     "profile_step": 1, 
@@ -118,24 +119,24 @@ max_steps is given, it will override any value given in num_train_epochs
     "detailed": true, 
     "output_file": null
 }
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   fp16_auto_cast ............... None
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   fp16_enabled ................. False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   fp16_master_weights_and_gradients  False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   global_rank .................. 0
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   grad_accum_dtype ............. None
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   gradient_accumulation_steps .. 1
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   gradient_clipping ............ 1.0
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   gradient_predivide_factor .... 1.0
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   graph_harvesting ............. False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   initial_dynamic_scale ........ 65536
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   load_universal_checkpoint .... False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   loss_scale ................... 0
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   memory_breakdown ............. False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   mics_hierarchial_params_gather  False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   mics_shard_size .............. -1
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   nebula_config ................ {
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   fp16_auto_cast ............... None
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   fp16_enabled ................. False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   fp16_master_weights_and_gradients  False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   global_rank .................. 0
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   grad_accum_dtype ............. None
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   gradient_accumulation_steps .. 1
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   gradient_clipping ............ 1.0
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   gradient_predivide_factor .... 1.0
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   graph_harvesting ............. False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   initial_dynamic_scale ........ 65536
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   load_universal_checkpoint .... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   loss_scale ................... 0
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   memory_breakdown ............. False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   mics_hierarchial_params_gather  False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   mics_shard_size .............. -1
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   nebula_config ................ {
     "enabled": false, 
     "persistent_storage_path": null, 
     "persistent_time_interval": 100, 
@@ -143,32 +144,32 @@ max_steps is given, it will override any value given in num_train_epochs
     "enable_nebula_load": true, 
     "load_path": null
 }
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   optimizer_legacy_fusion ...... False
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   optimizer_name ............... None
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   optimizer_params ............. None
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
-[2024-03-19 11:22:40,133] [INFO] [config.py:991:print]   pld_enabled .................. False
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   pld_params ................... False
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   prescale_gradients ........... False
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   scheduler_name ............... None
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   scheduler_params ............. None
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   seq_parallel_communication_data_type  torch.float32
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   sparse_attention ............. None
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   sparse_gradients_enabled ..... False
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   steps_per_print .............. inf
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   train_batch_size ............. 1
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   train_micro_batch_size_per_gpu  1
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   use_data_before_expert_parallel_  False
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   use_node_local_storage ....... False
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   wall_clock_breakdown ......... False
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   weight_quantization_config ... None
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   world_size ................... 1
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   zero_allow_untested_optimizer  True
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   zero_enabled ................. True
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   zero_force_ds_cpu_optimizer .. True
-[2024-03-19 11:22:40,134] [INFO] [config.py:991:print]   zero_optimization_stage ...... 2
-[2024-03-19 11:22:40,134] [INFO] [config.py:977:print_user_config]   json = {
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   optimizer_legacy_fusion ...... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   optimizer_name ............... None
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   optimizer_params ............. None
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   pld_enabled .................. False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   pld_params ................... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   prescale_gradients ........... False
+[2024-03-19 12:27:09,619] [INFO] [config.py:991:print]   scheduler_name ............... None
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   scheduler_params ............. None
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   seq_parallel_communication_data_type  torch.float32
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   sparse_attention ............. None
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   sparse_gradients_enabled ..... False
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   steps_per_print .............. inf
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   train_batch_size ............. 1
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   train_micro_batch_size_per_gpu  1
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   use_data_before_expert_parallel_  False
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   use_node_local_storage ....... False
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   wall_clock_breakdown ......... False
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   weight_quantization_config ... None
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   world_size ................... 1
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   zero_allow_untested_optimizer  True
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   zero_enabled ................. True
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   zero_force_ds_cpu_optimizer .. True
+[2024-03-19 12:27:09,620] [INFO] [config.py:991:print]   zero_optimization_stage ...... 2
+[2024-03-19 12:27:09,620] [INFO] [config.py:977:print_user_config]   json = {
     "fp16": {
         "enabled": false, 
         "loss_scale": 0, 
@@ -210,182 +211,39 @@ wandb: Currently logged in as: sakura501. Use `wandb login --relogin` to force r
 wandb: wandb version 0.16.4 is available!  To upgrade, please run:
 wandb:  $ pip install wandb --upgrade
 wandb: Tracking run with wandb version 0.16.3
-wandb: Run data is saved locally in /home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/wandb/run-20240319_112241-azvpg271
+wandb: Run data is saved locally in /home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/wandb/run-20240319_122711-eaklytjt
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run quiet-fire-17
+wandb: Syncing run jumping-music-20
 wandb: ⭐️ View project at https://wandb.ai/sakura501/huggingface
-wandb: 🚀 View run at https://wandb.ai/sakura501/huggingface/runs/azvpg271
-  0%|          | 0/3000 [00:00<?, ?it/s]  0%|          | 1/3000 [00:02<2:09:06,  2.58s/it]  0%|          | 2/3000 [00:02<56:38,  1.13s/it]    0%|          | 3/3000 [00:02<33:23,  1.50it/s]  0%|          | 4/3000 [00:02<22:16,  2.24it/s]  0%|          | 5/3000 [00:03<22:45,  2.19it/s]Traceback (most recent call last):
-  File "/home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/finetune_hf.py", line 558, in <module>
-    app()
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/main.py", line 328, in __call__
-    raise e
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/main.py", line 311, in __call__
-    return get_command(self)(*args, **kwargs)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
-    return self.main(*args, **kwargs)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/core.py", line 716, in main
-    return _main(
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/core.py", line 216, in _main
-    rv = self.invoke(ctx)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/click/core.py", line 783, in invoke
-    return __callback(*args, **kwargs)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/typer/main.py", line 683, in wrapper
-    return callback(**use_params)  # type: ignore
-  File "/home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/finetune_hf.py", line 520, in main
-    trainer.train()
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
-    return inner_training_loop(
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
-    tr_loss_step = self.training_step(model, inputs)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/trainer.py", line 2781, in training_step
-    self.accelerator.backward(loss)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/accelerate/accelerator.py", line 1960, in backward
-    self.deepspeed_engine_wrapped.backward(loss, **kwargs)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/accelerate/utils/deepspeed.py", line 167, in backward
-    self.engine.backward(loss, **kwargs)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
-    ret_val = func(*args, **kwargs)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1974, in backward
-    self.optimizer.backward(loss, retain_graph=retain_graph)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 2052, in backward
-    buf_1 = torch.empty(int(self.reduce_bucket_size),
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.86 GiB. GPU 0 has a total capacity of 79.15 GiB of which 1.63 GiB is free. Process 2673556 has 34.17 GiB memory in use. Process 4029770 has 26.77 GiB memory in use. Including non-PyTorch memory, this process has 16.55 GiB memory in use. Of the allocated memory 14.39 GiB is allocated by PyTorch, and 1.35 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-╭─────────────────────────────── Traceback (most recent call last) ────────────────────────────────╮
-│ /home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/finetune_demo/finetune_hf.py:520 in main   │
-│                                                                                                  │
-│   517 │                                                                                          │
-│   518 │   # Determine whether to continue training without breakpoints or if it is empty, then   │
-│   519 │   if auto_resume_from_checkpoint.upper() == "" or auto_resume_from_checkpoint is None:   │
-│ ❱ 520 │   │   trainer.train()                                                                    │
-│   521 │   else:                                                                                  │
-│   522 │   │   output_dir = ft_config.training_args.output_dir                                    │
-│   523 │   │   dirlist = os.listdir(output_dir)                                                   │
-│                                                                                                  │
-│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/trainer.py:1539 in train    │
-│                                                                                                  │
-│   1536 │   │   │   finally:                                                                      │
-│   1537 │   │   │   │   hf_hub_utils.enable_progress_bars()                                       │
-│   1538 │   │   else:                                                                             │
-│ ❱ 1539 │   │   │   return inner_training_loop(                                                   │
-│   1540 │   │   │   │   args=args,                                                                │
-│   1541 │   │   │   │   resume_from_checkpoint=resume_from_checkpoint,                            │
-│   1542 │   │   │   │   trial=trial,                                                              │
-│                                                                                                  │
-│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/trainer.py:1869 in          │
-│ _inner_training_loop                                                                             │
-│                                                                                                  │
-│   1866 │   │   │   │   │   self.control = self.callback_handler.on_step_begin(args, self.state,  │
-│   1867 │   │   │   │                                                                             │
-│   1868 │   │   │   │   with self.accelerator.accumulate(model):                                  │
-│ ❱ 1869 │   │   │   │   │   tr_loss_step = self.training_step(model, inputs)                      │
-│   1870 │   │   │   │                                                                             │
-│   1871 │   │   │   │   if (                                                                      │
-│   1872 │   │   │   │   │   args.logging_nan_inf_filter                                           │
-│                                                                                                  │
-│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/trainer.py:2781 in          │
-│ training_step                                                                                    │
-│                                                                                                  │
-│   2778 │   │   │   with amp.scale_loss(loss, self.optimizer) as scaled_loss:                     │
-│   2779 │   │   │   │   scaled_loss.backward()                                                    │
-│   2780 │   │   else:                                                                             │
-│ ❱ 2781 │   │   │   self.accelerator.backward(loss)                                               │
-│   2782 │   │                                                                                     │
-│   2783 │   │   return loss.detach() / self.args.gradient_accumulation_steps                      │
-│   2784                                                                                           │
-│                                                                                                  │
-│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/accelerate/accelerator.py:1960 in        │
-│ backward                                                                                         │
-│                                                                                                  │
-│   1957 │   │   │   # deepspeed handles loss scaling by gradient_accumulation_steps in its `back  │
-│   1958 │   │   │   loss = loss / self.gradient_accumulation_steps                                │
-│   1959 │   │   if self.distributed_type == DistributedType.DEEPSPEED:                            │
-│ ❱ 1960 │   │   │   self.deepspeed_engine_wrapped.backward(loss, **kwargs)                        │
-│   1961 │   │   elif self.distributed_type == DistributedType.MEGATRON_LM:                        │
-│   1962 │   │   │   return                                                                        │
-│   1963 │   │   elif self.scaler is not None:                                                     │
-│                                                                                                  │
-│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/accelerate/utils/deepspeed.py:167 in     │
-│ backward                                                                                         │
-│                                                                                                  │
-│   164 │                                                                                          │
-│   165 │   def backward(self, loss, **kwargs):                                                    │
-│   166 │   │   # runs backpropagation and handles mixed precision                                 │
-│ ❱ 167 │   │   self.engine.backward(loss, **kwargs)                                               │
-│   168 │   │                                                                                      │
-│   169 │   │   # Deepspeed's `engine.step` performs the following operations:                     │
-│   170 │   │   # - gradient accumulation check                                                    │
-│                                                                                                  │
-│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/utils/nvtx.py:15 in wrapped_fn │
-│                                                                                                  │
-│   12 │                                                                                           │
-│   13 │   def wrapped_fn(*args, **kwargs):                                                        │
-│   14 │   │   get_accelerator().range_push(func.__qualname__)                                     │
-│ ❱ 15 │   │   ret_val = func(*args, **kwargs)                                                     │
-│   16 │   │   get_accelerator().range_pop()                                                       │
-│   17 │   │   return ret_val                                                                      │
-│   18                                                                                             │
-│                                                                                                  │
-│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/engine.py:1974 in      │
-│ backward                                                                                         │
-│                                                                                                  │
-│   1971 │   │                                                                                     │
-│   1972 │   │   if self.zero_optimization():                                                      │
-│   1973 │   │   │   self.optimizer.is_gradient_accumulation_boundary = self.is_gradient_accumula  │
-│ ❱ 1974 │   │   │   self.optimizer.backward(loss, retain_graph=retain_graph)                      │
-│   1975 │   │   elif self.amp_enabled():                                                          │
-│   1976 │   │   │   # AMP requires delaying unscale when inside gradient accumulation boundaries  │
-│   1977 │   │   │   # https://nvidia.github.io/apex/advanced.html#gradient-accumulation-across-i  │
-│                                                                                                  │
-│ /home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/zero/stage_1_and_2.py: │
-│ 2052 in backward                                                                                 │
-│                                                                                                  │
-│   2049 │   │   │                                                                                 │
-│   2050 │   │   │   # Use double buffers to avoid data access conflict when overlap_comm is enab  │
-│   2051 │   │   │   if self.overlap_comm:                                                         │
-│ ❱ 2052 │   │   │   │   buf_1 = torch.empty(int(self.reduce_bucket_size),                         │
-│   2053 │   │   │   │   │   │   │   │   │   dtype=self.dtype,                                     │
-│   2054 │   │   │   │   │   │   │   │   │   device=get_accelerator().current_device_name())       │
-│   2055 │   │   │   │   self.ipg_buffer.append(buf_1)                                             │
-╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
-OutOfMemoryError: CUDA out of memory. Tried to allocate 1.86 GiB. GPU 0 has a total capacity of 79.15 GiB of which 1.63 GiB is free. Process 
-2673556 has 34.17 GiB memory in use. Process 4029770 has 26.77 GiB memory in use. Including non-PyTorch memory, this process has 16.55 GiB 
-memory in use. Of the allocated memory 14.39 GiB is allocated by PyTorch, and 1.35 GiB is reserved by PyTorch but unallocated. If reserved but 
-unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory 
-Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-wandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.064 MB uploadedwandb: \ 0.064 MB of 0.064 MB uploadedwandb: 🚀 View run quiet-fire-17 at: https://wandb.ai/sakura501/huggingface/runs/azvpg271
-wandb: ️⚡ View job at https://wandb.ai/sakura501/huggingface/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjE0OTYzNTU5MA==/version_details/v8
-wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Find logs at: ./wandb/run-20240319_112241-azvpg271/logs
-[2024-03-19 11:23:14,321] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 4048217) of binary: /home/w1nd/.conda/envs/llm/bin/python
-Traceback (most recent call last):
-  File "/home/w1nd/.conda/envs/llm/bin/torchrun", line 8, in <module>
-    sys.exit(main())
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
-    return f(*args, **kwargs)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
-    run(args)
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
-    elastic_launch(
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-finetune_hf.py FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2024-03-19_11:23:14
-  host      : localhost
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 4048217)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
+wandb: 🚀 View run at https://wandb.ai/sakura501/huggingface/runs/eaklytjt
+  0%|          | 0/3000 [00:00<?, ?it/s]  0%|          | 1/3000 [00:03<2:45:32,  3.31s/it]  0%|          | 2/3000 [00:03<1:11:43,  1.44s/it]  0%|          | 3/3000 [00:03<42:01,  1.19it/s]    0%|          | 4/3000 [00:03<27:30,  1.82it/s]  0%|          | 5/3000 [00:04<29:02,  1.72it/s]  0%|          | 6/3000 [00:05<31:51,  1.57it/s]  0%|          | 7/3000 [00:05<23:27,  2.13it/s]  0%|          | 8/3000 [00:05<17:50,  2.80it/s]  0%|          | 9/3000 [00:05<14:04,  3.54it/s]  0%|          | 10/3000 [00:05<11:31,  4.33it/s]                                                 {'loss': 4.9566, 'learning_rate': 4.9833333333333336e-05, 'epoch': 0.0}
+  0%|          | 10/3000 [00:06<11:31,  4.33it/s]  0%|          | 11/3000 [00:06<17:59,  2.77it/s]  0%|          | 12/3000 [00:06<14:17,  3.49it/s]  0%|          | 13/3000 [00:06<11:40,  4.26it/s]  0%|          | 14/3000 [00:06<09:54,  5.02it/s]  0%|          | 15/3000 [00:06<08:45,  5.68it/s]  1%|          | 16/3000 [00:06<08:17,  6.00it/s]  1%|          | 17/3000 [00:06<07:40,  6.47it/s]  1%|          | 18/3000 [00:07<06:59,  7.11it/s]  1%|          | 19/3000 [00:07<06:45,  7.36it/s]  1%|          | 20/3000 [00:07<06:36,  7.51it/s]                                                 {'loss': 4.7619, 'learning_rate': 4.966666666666667e-05, 'epoch': 0.0}
+  1%|          | 20/3000 [00:07<06:36,  7.51it/s]  1%|          | 21/3000 [00:07<06:17,  7.90it/s]  1%|          | 22/3000 [00:07<06:16,  7.90it/s]  1%|          | 23/3000 [00:07<06:15,  7.93it/s]  1%|          | 24/3000 [00:07<07:20,  6.75it/s]  1%|          | 25/3000 [00:08<15:57,  3.11it/s]  1%|          | 26/3000 [00:08<12:54,  3.84it/s]  1%|          | 27/3000 [00:08<11:16,  4.39it/s]  1%|          | 28/3000 [00:08<09:41,  5.11it/s]  1%|          | 29/3000 [00:09<08:56,  5.54it/s]  1%|          | 30/3000 [00:09<08:03,  6.15it/s]                                                 {'loss': 4.7439, 'learning_rate': 4.9500000000000004e-05, 'epoch': 0.01}
+  1%|          | 30/3000 [00:09<08:03,  6.15it/s]  1%|          | 31/3000 [00:09<07:24,  6.68it/s]  1%|          | 32/3000 [00:09<06:59,  7.08it/s]  1%|          | 33/3000 [00:09<06:29,  7.62it/s]  1%|          | 34/3000 [00:09<06:19,  7.82it/s]  1%|          | 35/3000 [00:09<06:13,  7.93it/s]  1%|          | 36/3000 [00:10<12:33,  3.94it/s]  1%|          | 37/3000 [00:10<10:33,  4.67it/s]  1%|▏         | 38/3000 [00:10<09:14,  5.34it/s]  1%|▏         | 39/3000 [00:10<08:08,  6.06it/s]  1%|▏         | 40/3000 [00:10<07:32,  6.55it/s]                                                 {'loss': 4.633, 'learning_rate': 4.933333333333334e-05, 'epoch': 0.01}
+  1%|▏         | 40/3000 [00:10<07:32,  6.55it/s]  1%|▏         | 41/3000 [00:10<07:12,  6.84it/s]  1%|▏         | 42/3000 [00:11<06:38,  7.42it/s]  1%|▏         | 43/3000 [00:11<06:09,  8.00it/s]  1%|▏         | 44/3000 [00:11<06:03,  8.12it/s]  2%|▏         | 45/3000 [00:11<06:02,  8.16it/s]  2%|▏         | 46/3000 [00:11<05:55,  8.30it/s]  2%|▏         | 47/3000 [00:11<05:52,  8.37it/s]  2%|▏         | 48/3000 [00:11<05:57,  8.25it/s]  2%|▏         | 49/3000 [00:11<06:13,  7.91it/s]  2%|▏         | 50/3000 [00:12<06:00,  8.18it/s]                                                 {'loss': 4.4072, 'learning_rate': 4.9166666666666665e-05, 'epoch': 0.01}
+  2%|▏         | 50/3000 [00:12<06:00,  8.18it/s]***** Running Evaluation *****
+  Num examples = 50
+  Batch size = 1
+
+  0%|          | 0/50 [00:00<?, ?it/s][A
+  4%|▍         | 2/50 [00:02<00:51,  1.07s/it][A
+  6%|▌         | 3/50 [00:09<03:01,  3.86s/it][A
+  8%|▊         | 4/50 [00:17<04:02,  5.27s/it][A
+ 10%|█         | 5/50 [00:24<04:15,  5.69s/it][A
+ 12%|█▏        | 6/50 [00:27<03:40,  5.00s/it][A
+ 14%|█▍        | 7/50 [00:35<04:13,  5.90s/it][A
+ 16%|█▌        | 8/50 [00:39<03:40,  5.24s/it][A
+ 18%|█▊        | 9/50 [00:40<02:46,  4.07s/it][A
+ 20%|██        | 10/50 [00:45<02:57,  4.43s/it][A
+ 22%|██▏       | 11/50 [00:52<03:13,  4.96s/it][A
+ 24%|██▍       | 12/50 [00:59<03:40,  5.80s/it][A
+ 26%|██▌       | 13/50 [01:07<03:58,  6.45s/it][A
+ 28%|██▊       | 14/50 [01:15<04:06,  6.86s/it][A
+ 30%|███       | 15/50 [01:23<04:10,  7.15s/it][A
+ 32%|███▏      | 16/50 [01:31<04:08,  7.30s/it][A
+ 34%|███▍      | 17/50 [01:38<04:03,  7.39s/it][A
+ 36%|███▌      | 18/50 [01:46<03:59,  7.49s/it][A
+ 38%|███▊      | 19/50 [01:53<03:47,  7.33s/it][A
+ 40%|████      | 20/50 [02:01<03:46,  7.53s/it][A
+ 42%|████▏     | 21/50 [02:10<03:48,  7.87s/it][A
+ 44%|████▍     | 22/50 [02:11<02:49,  6.04s/it][A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       wandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb: / 0.026 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploaded
