@@ -1,0 +1,1 @@
+echo "解释一下菠菜有几种意思" | CUDA_VISIBLE_DEVICES=1 python winrate_eval.py
