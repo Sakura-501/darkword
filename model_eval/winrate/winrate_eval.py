@@ -2,6 +2,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel,PeftConfig
 import re
+import json
 
 llama2_chinese_model_path="FlagAlpha/Atom-7B-Chat"
 atom_lora_model_path="/home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-threefold-Atom-7B-Chat"
@@ -64,11 +65,21 @@ def atom_model_generate_response(query):
     pattern = r"Assistant: (.*?)\n</s>"
     matches = re.findall(pattern,text,re.DOTALL)
     return matches[0]
-        
+
+def load_eval_data():
+    with open("/home/w1nd/darkword/1darkword/model_eval/data/eval_test.json","r",encoding="utf-8") as jsonfile:
+        eval_data = json.load(jsonfile)
+    jsonfile.close()
+    print("评估数据的数量："+str(len(eval_data)))
+    print(eval_data)
+    return eval_data
 
 if __name__ == "__main__":
-    query=input()
-    a_model_response=base_model_generate_response(query)
-    b_model_response=atom_model_generate_response(query)
-    print(a_model_response)
-    print(b_model_response)
+    # query=input()
+    eval_data=load_eval_data()
+    for one_conversation in eval_data:
+        
+    # a_model_response=base_model_generate_response(query)
+    # b_model_response=atom_model_generate_response(query)
+    # print(a_model_response)
+    # print(b_model_response)
