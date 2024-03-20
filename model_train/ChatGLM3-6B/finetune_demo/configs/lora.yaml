@@ -3,14 +3,14 @@ data_config:
   val_file: dev.json
   test_file: dev.json
   num_proc: 1
-max_input_length: 256
-max_output_length: 512
+max_input_length: 512
+max_output_length: 1024
 training_args:
   # see `transformers.Seq2SeqTrainingArguments`
   output_dir: ../darkword-ChatGLM3-6B
   max_steps: 3000
   # settings for data loading
-  per_device_train_batch_size: 1
+  per_device_train_batch_size: 2
   dataloader_num_workers: 1
   remove_unused_columns: false
   # settings for saving checkpoints
@@ -21,7 +21,7 @@ training_args:
   logging_strategy: steps
   logging_steps: 10
   # settings for evaluation
-  per_device_eval_batch_size: 1
+  per_device_eval_batch_size: 16
   evaluation_strategy: steps
   eval_steps: 50
   # settings for optimizer

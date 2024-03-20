@@ -7,11 +7,12 @@ config = PeftConfig.from_pretrained(finetune_model_path)
 # 例如: base_model_name_or_path='meta-llama/Llama-2-7b-chat'
 tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path,use_fast=False)
 tokenizer.pad_token = tokenizer.eos_token
-device_map = "cuda:0" if torch.cuda.is_available() else "auto"
+device_map = "cuda" if torch.cuda.is_available() else "auto"
 model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path,device_map=device_map,torch_dtype=torch.float16,load_in_8bit=True,trust_remote_code=True,use_flash_attention_2=True)
 model = PeftModel.from_pretrained(model, finetune_model_path, device_map={"": 0})
 model =model.eval()
-input_ids = tokenizer(['<s>Human: 给我解释一下菠菜在黑灰产领域是什么意思\n</s><s>Assistant: '], return_tensors="pt",add_special_tokens=False).input_ids
+query=input()
+input_ids = tokenizer([f'<s>Human: {query}\n</s><s>Assistant: '], return_tensors="pt",add_special_tokens=False).input_ids
 if torch.cuda.is_available():
   input_ids = input_ids.to('cuda')
 generate_input = {
