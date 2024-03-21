@@ -81,30 +81,37 @@ def load_eval_data(eval_data_path):
     print(eval_data)
     return eval_data
 
-def generate_response(eval_data,response_path):
-    responses=[]
-    
+def generate_response(eval_data,base_atom_response_path,lora_atom_response_path):
+    base_atom_responses=[]
+    lora_atom_responses=[]
     for each_conversation in eval_data:
         question=each_conversation["conversations"][0]["content"]
         standard_answer=each_conversation["conversations"][1]["content"]
         atom_base_response=base_model_generate_response(question)
         atom_lora_response=atom_model_generate_response(question)
-        one_response={"question":question,"standard_answer":standard_answer,"atom_base_response":atom_base_response,"atom_lora_response":atom_lora_response}
-        print(one_response)
-        responses.append(one_response)
-        with open(response_path,"wt",encoding="utf-8") as jsonfile:
-            json.dump(responses,jsonfile,ensure_ascii=False,indent=4)
+        base_one_response={"question":question,"standard_answer":standard_answer,"atom_base_response":atom_base_response}
+        lora_one_response={"question":question,"standard_answer":standard_answer,"atom_lora_response":atom_lora_response}
+        print(base_one_response)
+        print(lora_one_response)
+        base_atom_responses.append(base_one_response)
+        lora_atom_responses.append(lora_one_response)
+        # 1. base_atom的保存
+        with open(base_atom_response_path,"wt",encoding="utf-8") as jsonfile:
+            json.dump(base_atom_responses,jsonfile,ensure_ascii=False,indent=4)
         jsonfile.close()  
-        
-       
+        # 2.lora_atom的保存
+        with open(lora_atom_response_path,"wt",encoding="utf-8") as jsonfile:
+            json.dump(lora_atom_responses,jsonfile,ensure_ascii=False,indent=4)
+        jsonfile.close()  
             
 
 if __name__ == "__main__":
     eval_data_path="/home/w1nd/darkword/1darkword/model_eval/data/dev.json"
     # response_path="/home/w1nd/darkword/1darkword/model_eval/data/base_and_lora_atom_response.json"
-    response_path="/home/w1nd/darkword/1darkword/model_eval/data/much_base_and_lora_atom_response.json"
+    base_atom_response_path="/home/w1nd/darkword/1darkword/model_eval/data/results/base_atom_response.json"
+    lora_atom_response_path="/home/w1nd/darkword/1darkword/model_eval/data/results/lora_atom_response.json"
     eval_data = load_eval_data(eval_data_path)
-    generate_response(eval_data,response_path)
+    generate_response(eval_data,base_atom_response_path,lora_atom_response_path)
     # query=input()
     # a_model_response=base_model_generate_response(query)
     # b_model_response=atom_model_generate_response(query)

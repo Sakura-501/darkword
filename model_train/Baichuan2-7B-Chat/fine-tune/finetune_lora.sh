@@ -29,6 +29,6 @@ CUDA_VISIBLE_DEVICES=0 deepspeed --hostfile=$hostfile --include=$include --maste
     --gradient_checkpointing True \
     --deepspeed ds_config.json \
     --use_lora True \
+    --bf16 True \
     > $log_file_path 2>&1
-    # --bf16 True \
     # --tf32 True \
