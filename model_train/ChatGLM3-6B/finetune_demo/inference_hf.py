@@ -30,16 +30,16 @@ def load_model_and_tokenizer(model_dir: Union[str, Path]) -> tuple[ModelType, To
     device_map="auto"
     if (model_dir / 'adapter_config.json').exists():
         model = AutoPeftModelForCausalLM.from_pretrained(
-            model_dir, trust_remote_code=True, device_map=device_map
+            model_dir, trust_remote_code=True, device_map=device_map,local_files_only=True
         )
         tokenizer_dir = model.peft_config['default'].base_model_name_or_path
     else:
         model = AutoModelForCausalLM.from_pretrained(
-            model_dir, trust_remote_code=True, device_map=device_map
+            model_dir, trust_remote_code=True, device_map=device_map,local_files_only=True
         )
         tokenizer_dir = model_dir
     tokenizer = AutoTokenizer.from_pretrained(
-        tokenizer_dir, trust_remote_code=True
+        tokenizer_dir, trust_remote_code=True,local_files_only=True
     )
     return model, tokenizer
 

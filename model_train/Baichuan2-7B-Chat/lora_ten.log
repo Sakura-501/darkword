@@ -1,0 +1,39 @@
+[2024-03-20 13:04:57,994] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-20 13:04:58,787] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+Detected CUDA_VISIBLE_DEVICES=0 but ignoring it because one or several of --include/--exclude/--num_gpus/--num_nodes cl args were used. If you want to use CUDA_VISIBLE_DEVICES don't pass any of these arguments to deepspeed.
+[2024-03-20 13:04:58,788] [INFO] [runner.py:568:main] cmd = /home/w1nd/.conda/envs/llm/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMF19 --master_addr=127.0.0.1 --master_port=12347 --enable_each_rank_log=None fine-tune.py --report_to none --data_path /home/w1nd/darkword/1darkword/data_crawl/darkword_data_baichuan2/train_data.json --model_name_or_path baichuan-inc/Baichuan2-7B-Chat --output_dir /home/w1nd/darkword/1darkword/model_train/Baichuan2-7B-Chat/darkword-tenfold-Baichuan2-7B-Chat --model_max_length 512 --num_train_epochs 30 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --save_strategy epoch --learning_rate 2e-5 --lr_scheduler_type constant --adam_beta1 0.9 --adam_beta2 0.98 --adam_epsilon 1e-8 --max_grad_norm 1.0 --weight_decay 1e-4 --warmup_ratio 0.0 --logging_steps 1 --gradient_checkpointing True --deepspeed ds_config.json --use_lora True
+[2024-03-20 13:05:00,890] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-20 13:05:01,542] [INFO] [launch.py:145:main] WORLD INFO DICT: {'localhost': [0]}
+[2024-03-20 13:05:01,542] [INFO] [launch.py:151:main] nnodes=1, num_local_procs=1, node_rank=0
+[2024-03-20 13:05:01,542] [INFO] [launch.py:162:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0]})
+[2024-03-20 13:05:01,542] [INFO] [launch.py:163:main] dist_world_size=1
+[2024-03-20 13:05:01,542] [INFO] [launch.py:165:main] Setting CUDA_VISIBLE_DEVICES=0
+[2024-03-20 13:05:01,543] [INFO] [launch.py:253:main] process 847600 spawned with command: ['/home/w1nd/.conda/envs/llm/bin/python', '-u', 'fine-tune.py', '--local_rank=0', '--report_to', 'none', '--data_path', '/home/w1nd/darkword/1darkword/data_crawl/darkword_data_baichuan2/train_data.json', '--model_name_or_path', 'baichuan-inc/Baichuan2-7B-Chat', '--output_dir', '/home/w1nd/darkword/1darkword/model_train/Baichuan2-7B-Chat/darkword-tenfold-Baichuan2-7B-Chat', '--model_max_length', '512', '--num_train_epochs', '30', '--per_device_train_batch_size', '1', '--gradient_accumulation_steps', '1', '--save_strategy', 'epoch', '--learning_rate', '2e-5', '--lr_scheduler_type', 'constant', '--adam_beta1', '0.9', '--adam_beta2', '0.98', '--adam_epsilon', '1e-8', '--max_grad_norm', '1.0', '--weight_decay', '1e-4', '--warmup_ratio', '0.0', '--logging_steps', '1', '--gradient_checkpointing', 'True', '--deepspeed', 'ds_config.json', '--use_lora', 'True']
+[2024-03-20 13:05:04,155] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-20 13:05:04,561] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-03-20 13:05:04,561] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2024-03-20 13:05:09,033] [INFO] [partition_parameters.py:343:__exit__] finished initializing model - num_params = 226, num_elems = 6.99B
+Traceback (most recent call last):
+  File "/home/w1nd/darkword/1darkword/model_train/Baichuan2-7B-Chat/fine-tune/fine-tune.py", line 153, in <module>
+    train()
+  File "/home/w1nd/darkword/1darkword/model_train/Baichuan2-7B-Chat/fine-tune/fine-tune.py", line 114, in train
+    model = transformers.AutoModelForCausalLM.from_pretrained(
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 561, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/w1nd/.cache/huggingface/modules/transformers_modules/baichuan-inc/Baichuan2-7B-Chat/ea66ced17780ca3db39bc9f8aa601d8463db3da5/modeling_baichuan.py", line 660, in from_pretrained
+    return super(BaichuanForCausalLM, cls).from_pretrained(pretrained_model_name_or_path, *model_args, 
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3594, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 503, in wrapper
+    f(module, *args, **kwargs)
+  File "/home/w1nd/.cache/huggingface/modules/transformers_modules/baichuan-inc/Baichuan2-7B-Chat/ea66ced17780ca3db39bc9f8aa601d8463db3da5/modeling_baichuan.py", line 531, in __init__
+    self.lm_head = NormHead(config.hidden_size, config.vocab_size, bias=False)
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 503, in wrapper
+    f(module, *args, **kwargs)
+  File "/home/w1nd/.cache/huggingface/modules/transformers_modules/baichuan-inc/Baichuan2-7B-Chat/ea66ced17780ca3db39bc9f8aa601d8463db3da5/modeling_baichuan.py", line 498, in __init__
+    self.weight = nn.Parameter(torch.empty((vocab_size, hidden_size)))
+  File "/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 238, in wrapped_fn
+    tensor: Tensor = fn(*args, **kwargs)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.92 GiB. GPU 0 has a total capacity of 79.15 GiB of which 451.94 MiB is free. Process 4051167 has 32.62 GiB memory in use. Process 594669 has 1.45 GiB memory in use. Process 750441 has 1.23 GiB memory in use. Process 821162 has 15.84 GiB memory in use. Including non-PyTorch memory, this process has 27.54 GiB memory in use. Of the allocated memory 26.17 GiB is allocated by PyTorch, and 584.97 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[2024-03-20 13:05:10,548] [INFO] [launch.py:316:sigkill_handler] Killing subprocess 847600
+[2024-03-20 13:05:10,548] [ERROR] [launch.py:322:sigkill_handler] ['/home/w1nd/.conda/envs/llm/bin/python', '-u', 'fine-tune.py', '--local_rank=0', '--report_to', 'none', '--data_path', '/home/w1nd/darkword/1darkword/data_crawl/darkword_data_baichuan2/train_data.json', '--model_name_or_path', 'baichuan-inc/Baichuan2-7B-Chat', '--output_dir', '/home/w1nd/darkword/1darkword/model_train/Baichuan2-7B-Chat/darkword-tenfold-Baichuan2-7B-Chat', '--model_max_length', '512', '--num_train_epochs', '30', '--per_device_train_batch_size', '1', '--gradient_accumulation_steps', '1', '--save_strategy', 'epoch', '--learning_rate', '2e-5', '--lr_scheduler_type', 'constant', '--adam_beta1', '0.9', '--adam_beta2', '0.98', '--adam_epsilon', '1e-8', '--max_grad_norm', '1.0', '--weight_decay', '1e-4', '--warmup_ratio', '0.0', '--logging_steps', '1', '--gradient_checkpointing', 'True', '--deepspeed', 'ds_config.json', '--use_lora', 'True'] exits with return code = 1

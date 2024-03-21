@@ -1,3 +1,4 @@
+from urllib import response
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel,PeftConfig
@@ -34,8 +35,11 @@ def base_model_generate_response(query):
     generate_ids  = base_model.generate(**generate_input)
     text = base_model_tokenizer.decode(generate_ids[0])
     pattern = r"Assistant: (.*?)\n</s>"
-    matches = re.findall(pattern,text,re.DOTALL)
-    return matches[0]
+    try:
+        matches = re.findall(pattern,text,re.DOTALL)
+        return matches[0]
+    except:
+        return ""
 
 # 加载lora微调后的atom大模型
 atom_model_config=PeftConfig.from_pretrained(atom_lora_model_path)
@@ -63,22 +67,45 @@ def atom_model_generate_response(query):
     generate_ids  = atom_model.generate(**generate_input)
     text = atom_tokenizer.decode(generate_ids[0])
     pattern = r"Assistant: (.*?)\n</s>"
-    matches = re.findall(pattern,text,re.DOTALL)
-    return matches[0]
+    try:
+        matches = re.findall(pattern,text,re.DOTALL)
+        return matches[0]
+    except:
+        return ""
 
-def load_eval_data():
-    with open("/home/w1nd/darkword/1darkword/model_eval/data/eval_test.json","r",encoding="utf-8") as jsonfile:
+def load_eval_data(eval_data_path):
+    with open(eval_data_path,"r",encoding="utf-8") as jsonfile:
         eval_data = json.load(jsonfile)
     jsonfile.close()
     print("评估数据的数量："+str(len(eval_data)))
     print(eval_data)
     return eval_data
 
-if __name__ == "__main__":
-    # query=input()
-    eval_data=load_eval_data()
-    for one_conversation in eval_data:
+def generate_response(eval_data,response_path):
+    responses=[]
+    
+    for each_conversation in eval_data:
+        question=each_conversation["conversations"][0]["content"]
+        standard_answer=each_conversation["conversations"][1]["content"]
+        atom_base_response=base_model_generate_response(question)
+        atom_lora_response=atom_model_generate_response(question)
+        one_response={"question":question,"standard_answer":standard_answer,"atom_base_response":atom_base_response,"atom_lora_response":atom_lora_response}
+        print(one_response)
+        responses.append(one_response)
+        with open(response_path,"wt",encoding="utf-8") as jsonfile:
+            json.dump(responses,jsonfile,ensure_ascii=False,indent=4)
+        jsonfile.close()  
         
+       
+            
+
+if __name__ == "__main__":
+    eval_data_path="/home/w1nd/darkword/1darkword/model_eval/data/dev.json"
+    # response_path="/home/w1nd/darkword/1darkword/model_eval/data/base_and_lora_atom_response.json"
+    response_path="/home/w1nd/darkword/1darkword/model_eval/data/much_base_and_lora_atom_response.json"
+    eval_data = load_eval_data(eval_data_path)
+    generate_response(eval_data,response_path)
+    # query=input()
     # a_model_response=base_model_generate_response(query)
     # b_model_response=atom_model_generate_response(query)
     # print(a_model_response)

@@ -9,7 +9,7 @@ tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path,use_fas
 tokenizer.pad_token = tokenizer.eos_token
 device_map = "cuda" if torch.cuda.is_available() else "auto"
 model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path,device_map=device_map,torch_dtype=torch.float16,load_in_8bit=True,trust_remote_code=True,use_flash_attention_2=True)
-model = PeftModel.from_pretrained(model, finetune_model_path, device_map={"": 0})
+model = PeftModel.from_pretrained(model, finetune_model_path, device_map=device_map)
 model =model.eval()
 query=input()
 input_ids = tokenizer([f'<s>Human: {query}\n</s><s>Assistant: '], return_tensors="pt",add_special_tokens=False).input_ids
