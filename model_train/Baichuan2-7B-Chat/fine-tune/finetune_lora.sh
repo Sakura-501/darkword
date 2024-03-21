@@ -13,7 +13,7 @@ CUDA_VISIBLE_DEVICES=0 deepspeed --hostfile=$hostfile --include=$include --maste
     --model_name_or_path $model_name \
     --output_dir $output_dir \
     --model_max_length 512 \
-    --num_train_epochs 30 \
+    --num_train_epochs 200 \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 1 \
     --save_strategy epoch \

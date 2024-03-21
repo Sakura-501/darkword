@@ -129,25 +129,25 @@ def base_and_lora_eval(base_file,lora_file,choice,output_file):
         
     
 if __name__ == "__main__":
-    base_atom_response_file="/home/w1nd/darkword/1darkword/model_eval/data/results/lora_baichuan2_response.json"
-    lora_atom_response_file="/home/w1nd/darkword/1darkword/model_eval/data/results/lora_chatglm3_response.json"
-    lora_baichuan2_response_file="/home/w1nd/darkword/1darkword/model_eval/data/results/lora_baichuan2_response.json"
-    lora_chatglm3_response_file="/home/w1nd/darkword/1darkword/model_eval/data/results/lora_chatglm3_response.json"
+    base_atom_response_file="/home/w1nd/darkword/1darkword/model_eval/data/responses/base_atom_response.json"
+    lora_atom_response_file="/home/w1nd/darkword/1darkword/model_eval/data/responses/lora_atom_response.json"
+    lora_baichuan2_response_file="/home/w1nd/darkword/1darkword/model_eval/data/responses/lora_baichuan2_response.json"
+    lora_chatglm3_response_file="/home/w1nd/darkword/1darkword/model_eval/data/responses/lora_chatglm3_response.json"
     
     base_atom_vs_lora_atom_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/base_atom_vs_lora_atom.json"
     base_atom_vs_lora_baichuan2_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/base_atom_vs_lora_baichuan2.json"
-    base_atom_cs_lora_chatglm3_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/base_atom_cs_lora_chatglm3.json"
+    base_atom_cs_lora_chatglm3_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/base_atom_vs_lora_chatglm3.json"
     test_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/test.json"
     
     
     # 1.base_atom_vs_lora_atom
-    # base_and_lora_eval(base_atom_response_file,lora_atom_response_file,1,base_atom_vs_lora_atom_file)
+    base_and_lora_eval(base_atom_response_file,lora_atom_response_file,1,base_atom_vs_lora_atom_file)
     
     # 2.base_atom_vs_lora_baichuan2
-    # base_and_lora_eval(base_atom_response_file,lora_baichuan2_response_file,2,base_atom_vs_lora_baichuan2_file)
+    base_and_lora_eval(base_atom_response_file,lora_baichuan2_response_file,2,base_atom_vs_lora_baichuan2_file)
     
     # 3.base_atom_vs_lora_chatglm3
-    # base_and_lora_eval(base_atom_response_file,lora_chatglm3_response_file,3,base_atom_cs_lora_chatglm3_file)
+    base_and_lora_eval(base_atom_response_file,lora_chatglm3_response_file,3,base_atom_cs_lora_chatglm3_file)
     
     # 4.lora_baichuan2_vs_lora_chatglm3
     # base_and_lora_eval(lora_baichuan2_response_file,lora_chatglm3_response_file,4,test_file)

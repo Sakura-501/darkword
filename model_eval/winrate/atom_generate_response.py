@@ -108,8 +108,8 @@ def generate_response(eval_data,base_atom_response_path,lora_atom_response_path)
 if __name__ == "__main__":
     eval_data_path="/home/w1nd/darkword/1darkword/model_eval/data/dev.json"
     # response_path="/home/w1nd/darkword/1darkword/model_eval/data/base_and_lora_atom_response.json"
-    base_atom_response_path="/home/w1nd/darkword/1darkword/model_eval/data/results/base_atom_response.json"
-    lora_atom_response_path="/home/w1nd/darkword/1darkword/model_eval/data/results/lora_atom_response.json"
+    base_atom_response_path="/home/w1nd/darkword/1darkword/model_eval/data/responses/base_atom_response.json"
+    lora_atom_response_path="/home/w1nd/darkword/1darkword/model_eval/data/responses/lora_atom_response.json"
     eval_data = load_eval_data(eval_data_path)
     generate_response(eval_data,base_atom_response_path,lora_atom_response_path)
     # query=input()

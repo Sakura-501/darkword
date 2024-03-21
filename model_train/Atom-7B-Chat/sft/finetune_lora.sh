@@ -15,14 +15,14 @@ validation_files="/home/w1nd/darkword/1darkword/data_crawl/darkword_data_atom/da
 deepspeed --include localhost:0 finetune_clm_lora.py \
     --model_name_or_path $model_name_or_path \
     --train_files $train_files \
-    --per_device_train_batch_size 4 \
+    --per_device_train_batch_size 1 \
     --per_device_eval_batch_size 1 \
     --do_train \
     --use_fast_tokenizer false \
     --output_dir ${output_model} \
     --learning_rate 1e-4 \
     --gradient_accumulation_steps 8 \
-    --num_train_epochs 30 \
+    --num_train_epochs 60 \
     --warmup_steps 400 \
     --lora_r 8 \
     --lora_alpha 32 \
@@ -42,7 +42,7 @@ deepspeed --include localhost:0 finetune_clm_lora.py \
     --overwrite_output_dir \
     --deepspeed ds_config_zero2.json \
     --ignore_data_skip true \
-    --bf16 \
+    --bf16 true\
     --gradient_checkpointing \
     --bf16_full_eval \
     --ddp_timeout 18000000 \
