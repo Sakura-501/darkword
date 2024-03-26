@@ -130,7 +130,7 @@ def train():
             task_type=TaskType.CAUSAL_LM,
             target_modules=["W_pack"],
             inference_mode=False,
-            r=1,
+            r=8,
             lora_alpha=32,
             lora_dropout=0.1,
         )

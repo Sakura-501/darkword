@@ -6,24 +6,30 @@ data_config:
 max_input_length: 512
 max_output_length: 512
 training_args:
+  warmup_ratio: 0.5
   # see `transformers.Seq2SeqTrainingArguments`
-  output_dir: ../darkword-ChatGLM3-6B
-  max_steps: 3000
+  output_dir: /home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/darkword-ChatGLM3-6B-1e4-8-2-16
+  # lr
+  learning_rate: 1e-4
   # settings for data loading
-  per_device_train_batch_size: 2
+  per_device_train_batch_size: 8
   dataloader_num_workers: 1
   remove_unused_columns: false
+  # settings for evaluation
+  per_device_eval_batch_size: 8
+  evaluation_strategy: steps
+  eval_steps: 20
+  # gradient
+  gradient_accumulation_steps: 2
+  # max_steps: 3200
+  num_train_epochs: 16
   # settings for saving checkpoints
   save_strategy: steps
-  save_steps: 500
+  save_steps: 20
   # settings for logging
   log_level: info
   logging_strategy: steps
   logging_steps: 10
-  # settings for evaluation
-  per_device_eval_batch_size: 16
-  evaluation_strategy: steps
-  eval_steps: 50
   # settings for optimizer
   # adam_epsilon: 1e-6
   # uncomment the following line to detect nan or inf values
@@ -31,7 +37,7 @@ training_args:
   predict_with_generate: true
   # see `transformers.GenerationConfig`
   generation_config:
-    max_new_tokens: 256
+    max_new_tokens: 512
   # set your absolute deepspeed path here
   deepspeed: configs/ds_zero_2.json
   # set to true if train with cpu.
