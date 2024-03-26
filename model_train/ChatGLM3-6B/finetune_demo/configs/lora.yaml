@@ -4,7 +4,7 @@ data_config:
   test_file: dev.json
   num_proc: 1
 max_input_length: 512
-max_output_length: 1024
+max_output_length: 512
 training_args:
   # see `transformers.Seq2SeqTrainingArguments`
   output_dir: ../darkword-ChatGLM3-6B

@@ -8,12 +8,12 @@ output_dir="/home/w1nd/darkword/1darkword/model_train/Baichuan2-7B-Chat/darkword
 # log_file_path="../lora.log"
 log_file_path="../lora_ten.log"
 CUDA_VISIBLE_DEVICES=0 deepspeed --hostfile=$hostfile --include=$include --master_port=12347 fine-tune.py  \
-    --report_to "none" \
+    --report_to "wandb" \
     --data_path $data_path \
     --model_name_or_path $model_name \
     --output_dir $output_dir \
     --model_max_length 512 \
-    --num_train_epochs 200 \
+    --num_train_epochs 10 \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 1 \
     --save_strategy epoch \
@@ -30,5 +30,5 @@ CUDA_VISIBLE_DEVICES=0 deepspeed --hostfile=$hostfile --include=$include --maste
     --deepspeed ds_config.json \
     --use_lora True \
     --bf16 True \
-    > $log_file_path 2>&1
+    | tee -a ${output_dir}/train.log
     # --tf32 True \

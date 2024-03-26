@@ -8,7 +8,7 @@ config = PeftConfig.from_pretrained(finetune_model_path)
 tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path,use_fast=False)
 tokenizer.pad_token = tokenizer.eos_token
 device_map = "cuda" if torch.cuda.is_available() else "auto"
-model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path,device_map=device_map,torch_dtype=torch.float16,load_in_8bit=True,trust_remote_code=True,use_flash_attention_2=True)
+model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path,device_map=device_map,torch_dtype=torch.float16,load_in_8bit=True,trust_remote_code=True,attn_implementation="flash_attention_2")
 model = PeftModel.from_pretrained(model, finetune_model_path, device_map=device_map)
 model =model.eval()
 query=input()
