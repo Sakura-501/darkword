@@ -2807,3 +2807,63 @@
 2024-03-26 02:17:50,604 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
 2024-03-26 02:17:53,770 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
 2024-03-26 02:17:55,770 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:17:56,180 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:17:57,771 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:17:59,772 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:01,773 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:01,825 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:18:03,773 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:04,185 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-26 02:18:04,186 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 02:18:04,187 DEBUG   SenderThread:676518 [sender.py:send_request():409] send_request: stop_status
+2024-03-26 02:18:04,205 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 02:18:05,720 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-26 02:18:05,721 DEBUG   SenderThread:676518 [sender.py:send():382] send: history
+2024-03-26 02:18:05,722 DEBUG   SenderThread:676518 [sender.py:send_request():409] send_request: summary_record
+2024-03-26 02:18:05,722 INFO    SenderThread:676518 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-26 02:18:05,774 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/wandb-summary.json
+2024-03-26 02:18:05,774 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:06,774 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:07,723 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:18:07,775 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:09,775 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:11,856 DEBUG   SenderThread:676518 [sender.py:send():382] send: stats
+2024-03-26 02:18:13,605 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:18:13,777 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:17,778 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:19,185 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-26 02:18:19,186 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 02:18:19,187 DEBUG   SenderThread:676518 [sender.py:send_request():409] send_request: stop_status
+2024-03-26 02:18:19,205 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 02:18:19,525 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:18:19,778 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:21,779 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:23,780 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:24,825 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:18:25,781 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:27,782 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:28,941 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-26 02:18:28,942 DEBUG   SenderThread:676518 [sender.py:send():382] send: history
+2024-03-26 02:18:28,942 DEBUG   SenderThread:676518 [sender.py:send_request():409] send_request: summary_record
+2024-03-26 02:18:28,943 INFO    SenderThread:676518 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-26 02:18:29,783 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/wandb-summary.json
+2024-03-26 02:18:29,783 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:30,191 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:18:30,783 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:31,783 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:33,784 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:34,186 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-26 02:18:34,187 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 02:18:34,187 DEBUG   SenderThread:676518 [sender.py:send_request():409] send_request: stop_status
+2024-03-26 02:18:34,206 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 02:18:35,555 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:18:35,784 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:37,785 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:39,786 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:40,890 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:18:41,787 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:41,871 DEBUG   SenderThread:676518 [sender.py:send():382] send: stats
+2024-03-26 02:18:43,787 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:45,788 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log
+2024-03-26 02:18:46,047 DEBUG   HandlerThread:676518 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 02:18:47,789 INFO    Thread-12 :676518 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/sft/wandb/run-20240326_013409-o2mko4i1/files/output.log

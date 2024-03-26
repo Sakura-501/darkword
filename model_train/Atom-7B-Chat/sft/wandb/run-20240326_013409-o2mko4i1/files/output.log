@@ -3479,3 +3479,30 @@
   warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
 
 
+
+
+
+
+
+  6%|█████████                                                                                                                                                   | 489/8440 [43:44<7:29:34,  3.39s/it]
+
+
+
+
+
+
+
+
+
+  6%|█████████▏                                                                                                                                                  | 500/8440 [44:09<4:15:25,  1.93s/it][INFO|trainer.py:3242] 2024-03-26 02:18:28,951 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-26 02:18:28,951 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-26 02:18:28,952 >>   Batch size = 1
+{'loss': 2.2798, 'learning_rate': 1.8593774333068988e-05, 'epoch': 0.59}
+
+
+
+
+
+
+
+
