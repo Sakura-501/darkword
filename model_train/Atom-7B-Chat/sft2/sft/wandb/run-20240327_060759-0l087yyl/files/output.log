@@ -1,0 +1,4080 @@
+  0%|                                                                                                    | 0/832 [00:00<?, ?it/s]/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+03/27/2024 06:08:08 - WARNING - transformers_modules.FlagAlpha.Atom-7B-Chat.52b7761650cc65f24f8ae832184947906af0c337.model_atom - `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/deepspeed/runtime/zero/stage_1_and_2.py:1303: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  total_norm_cuda = get_accelerator().FloatTensor([float(total_norm)])
+
+
+
+
+
+
+
+
+  1%|▉                                                                                         | 9/832 [02:00<3:03:25, 13.37s/it]
+  1%|█                                                                                        | 10/832 [02:14<3:03:23, 13.39s/it][INFO|trainer.py:3242] 2024-03-27 06:10:23,080 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:10:23,081 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:10:23,081 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [00:25<00:00,  3.56it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+  2%|██                                                                                       | 19/832 [04:41<3:07:51, 13.86s/it]
+  2%|██▏                                                                                      | 20/832 [04:54<3:05:34, 13.71s/it][INFO|trainer.py:3242] 2024-03-27 06:13:03,474 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:13:03,474 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:13:03,474 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+ 91%|████████████████████████████████████████████████████████████████████████████████████▏       | 86/94 [00:23<00:02,  3.73it/s]
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+  3%|███                                                                                      | 29/832 [07:20<3:04:55, 13.82s/it]
+  4%|███▏                                                                                     | 30/832 [07:48<3:59:33, 17.92s/it][INFO|trainer.py:3242] 2024-03-27 06:15:57,211 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:15:57,212 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:15:57,212 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [01:03<00:00,  1.39it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+
+  5%|████▏                                                                                   | 40/832 [16:43<10:46:40, 48.99s/it]
+  5%|████▏                                                                                   | 40/832 [16:43<10:46:40, 48.99s/it][INFO|trainer.py:3242] 2024-03-27 06:24:52,275 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:24:52,275 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:24:52,275 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|██████████████████████████████████████████████████████████████████████████████████████████  | 92/94 [01:24<00:02,  1.03s/it]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+  6%|█████▏                                                                                   | 49/832 [24:42<9:16:23, 42.63s/it]
+  6%|█████▎                                                                                   | 50/832 [25:16<8:41:45, 40.03s/it][INFO|trainer.py:3242] 2024-03-27 06:33:25,040 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:33:25,040 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:33:25,041 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [01:02<00:01,  1.52it/s]
+  6%|█████▎                                                                                   | 50/832 [26:21<8:41:45, 40.03s/it][INFO|trainer.py:2936] 2024-03-27 06:34:33,981 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-50
+[INFO|configuration_utils.py:729] 2024-03-27 06:34:34,534 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 06:34:34,535 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 06:34:34,610 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-50/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 06:34:34,610 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-50/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[2024-03-27 06:34:34,859] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step50 is about to be saved!
+[2024-03-27 06:34:34,889] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-50/global_step50/mp_rank_00_model_states.pt
+[2024-03-27 06:34:34,889] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-50/global_step50/mp_rank_00_model_states.pt...
+[2024-03-27 06:34:34,990] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-50/global_step50/mp_rank_00_model_states.pt.
+[2024-03-27 06:34:34,992] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 06:34:35,401] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 06:34:35,401] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 06:34:35,402] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step50 is ready now!
++++++++++++++++++save call back++++++++++++++++
+[INFO|configuration_utils.py:729] 2024-03-27 06:34:35,781 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 06:34:35,782 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+  7%|██████▎                                                                                  | 59/832 [29:21<3:38:51, 16.99s/it]
+  7%|██████▍                                                                                  | 60/832 [30:15<6:00:14, 28.00s/it][INFO|trainer.py:3242] 2024-03-27 06:38:23,962 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:38:23,962 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:38:23,962 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████████     | 89/94 [02:07<00:01,  3.57it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+  8%|███████▍                                                                                 | 70/832 [34:44<3:22:00, 15.91s/it][INFO|trainer.py:3242] 2024-03-27 06:42:53,063 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:42:53,063 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:42:53,063 >>   Batch size = 1
+  0%|                                                                                                     | 0/94 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████████     | 89/94 [00:24<00:01,  3.73it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 10%|████████▌                                                                                | 80/832 [37:24<2:52:47, 13.79s/it][INFO|trainer.py:3242] 2024-03-27 06:45:33,182 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:45:33,182 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:45:33,182 >>   Batch size = 1
+  0%|                                                                                                     | 0/94 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████████     | 89/94 [00:24<00:01,  3.70it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 11%|█████████▌                                                                               | 89/832 [39:50<2:51:18, 13.83s/it]
+ 11%|█████████▋                                                                               | 90/832 [40:03<2:49:51, 13.73s/it][INFO|trainer.py:3242] 2024-03-27 06:48:12,647 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:48:12,647 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:48:12,647 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [00:24<00:00,  3.67it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 12%|██████████▌                                                                              | 99/832 [42:29<2:48:51, 13.82s/it]
+ 12%|██████████▌                                                                             | 100/832 [42:43<2:47:28, 13.73s/it][INFO|trainer.py:3242] 2024-03-27 06:50:52,176 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:50:52,176 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:50:52,176 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████████▏     | 88/94 [00:23<00:01,  3.80it/s]
+{'eval_loss': 2.227353572845459, 'eval_accuracy': 0.8361496887186153, 'eval_runtime': 25.3844, 'eval_samples_per_second': 3.703, 'eval_steps_per_second': 3.703, 'epoch': 1.9}
+[2024-03-27 06:51:21,358] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step100 is about to be saved!
+[2024-03-27 06:51:21,386] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-100/global_step100/mp_rank_00_model_states.pt
+ 12%|██████████▌                                                                             | 100/832 [43:08<2:47:28, 13.73s/it][INFO|trainer.py:2936] 2024-03-27 06:51:20,568 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-100
+[INFO|configuration_utils.py:729] 2024-03-27 06:51:21,121 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 06:51:21,122 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 06:51:21,195 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-100/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 06:51:21,195 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-100/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[2024-03-27 06:51:21,483] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-100/global_step100/mp_rank_00_model_states.pt.
+[2024-03-27 06:51:21,485] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 06:51:21,765] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 06:51:21,765] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 06:51:21,765] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
++++++++++++++++++save call back++++++++++++++++
+[INFO|configuration_utils.py:729] 2024-03-27 06:51:22,155 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 06:51:22,156 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 13%|███████████▌                                                                            | 109/832 [45:16<2:51:39, 14.24s/it]
+ 13%|███████████▋                                                                            | 110/832 [45:30<2:50:28, 14.17s/it][INFO|trainer.py:3242] 2024-03-27 06:53:38,917 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:53:38,917 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:53:38,917 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.215466022491455, 'eval_accuracy': 0.8371074775945817, 'eval_runtime': 27.1317, 'eval_samples_per_second': 3.465, 'eval_steps_per_second': 3.465, 'epoch': 2.09}
+
+
+
+
+
+
+
+
+ 14%|████████████▋                                                                           | 120/832 [48:17<2:50:38, 14.38s/it][INFO|trainer.py:3242] 2024-03-27 06:56:25,974 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:56:25,975 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:56:25,975 >>   Batch size = 1
+  0%|                                                                                                     | 0/94 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.190337657928467, 'eval_accuracy': 0.8374495450502839, 'eval_runtime': 26.3896, 'eval_samples_per_second': 3.562, 'eval_steps_per_second': 3.562, 'epoch': 2.27}
+
+
+
+
+
+
+
+
+ 16%|█████████████▋                                                                          | 129/832 [50:48<2:47:50, 14.33s/it]
+ 16%|█████████████▊                                                                          | 130/832 [51:01<2:45:47, 14.17s/it][INFO|trainer.py:3242] 2024-03-27 06:59:10,706 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 06:59:10,706 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 06:59:10,706 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:25<00:01,  3.57it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 17%|██████████████▋                                                                         | 139/832 [53:31<2:43:46, 14.18s/it]
+ 17%|██████████████▊                                                                         | 140/832 [53:45<2:42:02, 14.05s/it][INFO|trainer.py:3242] 2024-03-27 07:01:54,344 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:01:54,345 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:01:54,345 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 94/94 [00:26<00:00,  3.65it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 18%|███████████████▊                                                                        | 149/832 [56:14<2:41:20, 14.17s/it]
+ 18%|███████████████▊                                                                        | 150/832 [56:28<2:39:03, 13.99s/it][INFO|trainer.py:3242] 2024-03-27 07:04:37,237 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:04:37,237 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:04:37,238 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:25<00:01,  3.48it/s]
+
+{'eval_loss': 2.1470654010772705, 'eval_accuracy': 0.8399124307313403, 'eval_runtime': 26.8369, 'eval_samples_per_second': 3.503, 'eval_steps_per_second': 3.503, 'epoch': 2.84}
+[2024-03-27 07:05:08,038] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step150 is about to be saved!
+[2024-03-27 07:05:08,065] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-150/global_step150/mp_rank_00_model_states.pt
+[2024-03-27 07:05:08,065] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-150/global_step150/mp_rank_00_model_states.pt...
+[2024-03-27 07:05:08,160] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-150/global_step150/mp_rank_00_model_states.pt.
+[2024-03-27 07:05:08,162] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-150/global_step150/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 07:05:08,443] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-150/global_step150/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 07:05:08,443] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-150/global_step150/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 07:05:08,444] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step150 is ready now!
+ 18%|███████████████▊                                                                        | 150/832 [56:55<2:39:03, 13.99s/it][INFO|trainer.py:2936] 2024-03-27 07:05:07,193 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-150
+[INFO|configuration_utils.py:729] 2024-03-27 07:05:07,759 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:05:07,760 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 07:05:07,833 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-150/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 07:05:07,834 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-150/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[INFO|configuration_utils.py:729] 2024-03-27 07:05:08,819 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:05:08,820 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 19%|████████████████▊                                                                       | 159/832 [59:03<2:40:39, 14.32s/it]
+ 19%|████████████████▉                                                                       | 160/832 [59:17<2:38:31, 14.15s/it][INFO|trainer.py:3242] 2024-03-27 07:07:26,404 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:07:26,404 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:07:26,404 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|██████████████████████████████████████████████████████████████████████████████████████████  | 92/94 [00:25<00:00,  3.59it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 20%|█████████████████▍                                                                    | 169/832 [1:01:47<2:36:26, 14.16s/it]
+ 20%|█████████████████▌                                                                    | 170/832 [1:02:01<2:34:57, 14.05s/it][INFO|trainer.py:3242] 2024-03-27 07:10:10,470 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:10:10,470 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:10:10,470 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [00:26<00:00,  3.51it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 22%|██████████████████▌                                                                   | 179/832 [1:04:31<2:34:00, 14.15s/it]
+ 22%|██████████████████▌                                                                   | 180/832 [1:04:45<2:32:28, 14.03s/it][INFO|trainer.py:3242] 2024-03-27 07:12:54,046 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:12:54,047 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:12:54,047 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 93%|█████████████████████████████████████████████████████████████████████████████████████▏      | 87/94 [00:24<00:01,  3.57it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 23%|███████████████████▌                                                                  | 189/832 [1:07:15<2:30:40, 14.06s/it]
+ 23%|███████████████████▋                                                                  | 190/832 [1:07:28<2:28:35, 13.89s/it][INFO|trainer.py:3242] 2024-03-27 07:15:37,609 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:15:37,609 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:15:37,609 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:25<00:01,  3.59it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 24%|████████████████████▌                                                                 | 199/832 [1:09:58<2:28:57, 14.12s/it]
+ 24%|████████████████████▋                                                                 | 200/832 [1:10:12<2:27:28, 14.00s/it][INFO|trainer.py:3242] 2024-03-27 07:18:21,118 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:18:21,118 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:18:21,119 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|██████████████████████████████████████████████████████████████████████████████████████████  | 92/94 [00:26<00:00,  3.54it/s]
+
+
+ 24%|████████████████████▋                                                                 | 200/832 [1:10:39<2:27:28, 14.00s/it][INFO|trainer.py:2936] 2024-03-27 07:18:51,289 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-200
+[2024-03-27 07:18:52,098] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step200 is about to be saved!
+[2024-03-27 07:18:52,124] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-200/global_step200/mp_rank_00_model_states.pt
+[2024-03-27 07:18:52,124] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-200/global_step200/mp_rank_00_model_states.pt...
+[2024-03-27 07:18:52,216] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-200/global_step200/mp_rank_00_model_states.pt.
+[2024-03-27 07:18:52,217] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 07:18:52,478] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 07:18:52,479] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 07:18:52,479] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step200 is ready now!
++++++++++++++++++save call back++++++++++++++++
+[INFO|configuration_utils.py:729] 2024-03-27 07:18:51,836 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:18:51,837 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 07:18:51,904 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-200/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 07:18:51,904 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-200/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[INFO|configuration_utils.py:729] 2024-03-27 07:18:52,860 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:18:52,861 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 25%|█████████████████████▋                                                                | 210/832 [1:13:00<2:25:24, 14.03s/it][INFO|trainer.py:3242] 2024-03-27 07:21:09,528 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:21:09,528 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:21:09,528 >>   Batch size = 1
+{'loss': 1.4796, 'learning_rate': 8.924541718766345e-05, 'epoch': 3.98}
+
+
+
+
+
+
+
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████████▏     | 88/94 [00:23<00:01,  3.64it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 26%|██████████████████████▋                                                               | 219/832 [1:15:28<2:23:37, 14.06s/it]
+ 26%|██████████████████████▋                                                               | 220/832 [1:15:42<2:21:58, 13.92s/it][INFO|trainer.py:3242] 2024-03-27 07:23:51,023 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:23:51,024 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:23:51,024 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.2578251361846924, 'eval_accuracy': 0.842751590613669, 'eval_runtime': 26.9229, 'eval_samples_per_second': 3.491, 'eval_steps_per_second': 3.491, 'epoch': 4.17}
+
+
+
+
+
+
+
+
+ 28%|███████████████████████▋                                                              | 229/832 [1:18:10<2:20:21, 13.97s/it]
+ 28%|███████████████████████▊                                                              | 230/832 [1:18:24<2:19:09, 13.87s/it][INFO|trainer.py:3242] 2024-03-27 07:26:33,190 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:26:33,191 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:26:33,191 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████████     | 89/94 [00:24<00:01,  3.56it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 29%|████████████████████████▋                                                             | 239/832 [1:20:52<2:17:41, 13.93s/it]
+ 29%|████████████████████████▊                                                             | 240/832 [1:21:06<2:15:40, 13.75s/it][INFO|trainer.py:3242] 2024-03-27 07:29:14,741 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:29:14,741 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:29:14,741 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [00:25<00:00,  3.53it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 30%|█████████████████████████▋                                                            | 249/832 [1:23:34<2:16:17, 14.03s/it]
+ 30%|█████████████████████████▊                                                            | 250/832 [1:23:48<2:14:59, 13.92s/it][INFO|trainer.py:3242] 2024-03-27 07:31:57,309 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:31:57,309 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:31:57,309 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:24<00:01,  3.59it/s]
+
+{'eval_loss': 2.253674030303955, 'eval_accuracy': 0.8441882739276185, 'eval_runtime': 26.4335, 'eval_samples_per_second': 3.556, 'eval_steps_per_second': 3.556, 'epoch': 4.74}
+[2024-03-27 07:32:27,580] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step250 is about to be saved!
+[2024-03-27 07:32:27,606] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-250/global_step250/mp_rank_00_model_states.pt
+[2024-03-27 07:32:27,606] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-250/global_step250/mp_rank_00_model_states.pt...
+[2024-03-27 07:32:27,706] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-250/global_step250/mp_rank_00_model_states.pt.
+[2024-03-27 07:32:27,708] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 07:32:28,092] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 07:32:28,093] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 07:32:28,093] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step250 is ready now!
+ 30%|█████████████████████████▊                                                            | 250/832 [1:24:15<2:14:59, 13.92s/it][INFO|trainer.py:2936] 2024-03-27 07:32:26,829 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-250
+[INFO|configuration_utils.py:729] 2024-03-27 07:32:27,381 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:32:27,382 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 07:32:27,449 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-250/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 07:32:27,449 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-250/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[INFO|configuration_utils.py:729] 2024-03-27 07:32:28,470 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:32:28,471 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 31%|██████████████████████████▉                                                           | 260/832 [1:26:35<2:13:06, 13.96s/it][INFO|trainer.py:3242] 2024-03-27 07:34:44,489 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:34:44,489 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:34:44,489 >>   Batch size = 1
+{'loss': 1.339, 'learning_rate': 9.281005649444445e-05, 'epoch': 4.93}
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 94/94 [00:26<00:00,  3.66it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 32%|███████████████████████████▉                                                          | 270/832 [1:29:18<2:10:16, 13.91s/it][INFO|trainer.py:3242] 2024-03-27 07:37:26,864 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:37:26,864 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:37:26,864 >>   Batch size = 1
+{'loss': 1.1587, 'learning_rate': 9.343995804332475e-05, 'epoch': 5.12}
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [00:25<00:00,  3.63it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 34%|████████████████████████████▊                                                         | 279/832 [1:31:46<2:10:10, 14.12s/it]
+ 34%|████████████████████████████▉                                                         | 280/832 [1:32:00<2:08:41, 13.99s/it][INFO|trainer.py:3242] 2024-03-27 07:40:09,295 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:40:09,296 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:40:09,296 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [00:25<00:00,  3.58it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 35%|█████████████████████████████▊                                                        | 289/832 [1:34:29<2:06:45, 14.01s/it]
+ 35%|█████████████████████████████▉                                                        | 290/832 [1:34:42<2:05:08, 13.85s/it][INFO|trainer.py:3242] 2024-03-27 07:42:51,473 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:42:51,473 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:42:51,473 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|██████████████████████████████████████████████████████████████████████████████████████████  | 92/94 [00:25<00:00,  3.59it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 36%|██████████████████████████████▉                                                       | 299/832 [1:37:11<2:05:09, 14.09s/it]
+ 36%|███████████████████████████████                                                       | 300/832 [1:37:25<2:04:16, 14.02s/it][INFO|trainer.py:3242] 2024-03-27 07:45:34,264 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:45:34,264 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:45:34,264 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:25<00:01,  3.57it/s]
+
+{'eval_loss': 2.3210442066192627, 'eval_accuracy': 0.8431620715605117, 'eval_runtime': 26.4945, 'eval_samples_per_second': 3.548, 'eval_steps_per_second': 3.548, 'epoch': 5.69}
+[2024-03-27 07:46:04,742] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step300 is about to be saved!
+[2024-03-27 07:46:04,771] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-300/global_step300/mp_rank_00_model_states.pt
+[2024-03-27 07:46:04,772] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-300/global_step300/mp_rank_00_model_states.pt...
+ 36%|███████████████████████████████                                                       | 300/832 [1:37:52<2:04:16, 14.02s/it][INFO|trainer.py:2936] 2024-03-27 07:46:03,987 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-300
+[INFO|configuration_utils.py:729] 2024-03-27 07:46:04,538 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:46:04,539 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 07:46:04,611 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-300/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 07:46:04,612 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-300/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[INFO|configuration_utils.py:729] 2024-03-27 07:46:05,546 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:46:05,547 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[2024-03-27 07:46:04,867] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 07:46:05,149] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 07:46:05,150] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 07:46:05,150] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step300 is ready now!
++++++++++++++++++save call back++++++++++++++++
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 37%|███████████████████████████████▉                                                      | 309/832 [1:39:59<2:03:55, 14.22s/it]
+ 37%|████████████████████████████████                                                      | 310/832 [1:40:13<2:02:31, 14.08s/it][INFO|trainer.py:3242] 2024-03-27 07:48:22,124 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:48:22,124 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:48:22,124 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [00:25<00:00,  3.63it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 38%|████████████████████████████████▉                                                     | 319/832 [1:42:41<2:00:04, 14.04s/it]
+ 38%|█████████████████████████████████                                                     | 320/832 [1:42:55<1:58:29, 13.89s/it][INFO|trainer.py:3242] 2024-03-27 07:51:04,210 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:51:04,210 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:51:04,210 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [00:25<00:00,  3.62it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 40%|██████████████████████████████████                                                    | 330/832 [1:45:36<1:56:38, 13.94s/it][INFO|trainer.py:3242] 2024-03-27 07:53:45,439 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:53:45,440 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:53:45,440 >>   Batch size = 1
+  2%|█▉                                                                                           | 2/94 [00:00<00:13,  7.07it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [00:24<00:00,  3.64it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 41%|███████████████████████████████████                                                   | 339/832 [1:48:04<1:55:24, 14.05s/it]
+ 41%|███████████████████████████████████▏                                                  | 340/832 [1:48:18<1:54:12, 13.93s/it][INFO|trainer.py:3242] 2024-03-27 07:56:26,949 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:56:26,949 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:56:26,949 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [00:25<00:00,  3.51it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 42%|████████████████████████████████████                                                  | 349/832 [1:50:46<1:53:03, 14.04s/it]
+ 42%|████████████████████████████████████▏                                                 | 350/832 [1:51:00<1:51:50, 13.92s/it][INFO|trainer.py:3242] 2024-03-27 07:59:09,199 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 07:59:09,200 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 07:59:09,200 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [00:25<00:00,  3.64it/s]
+
+
+ 42%|████████████████████████████████████▏                                                 | 350/832 [1:51:26<1:51:50, 13.92s/it][INFO|trainer.py:2936] 2024-03-27 07:59:38,263 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-350
+[2024-03-27 07:59:39,050] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step350 is about to be saved!
+[2024-03-27 07:59:39,077] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-350/global_step350/mp_rank_00_model_states.pt
+[2024-03-27 07:59:39,077] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-350/global_step350/mp_rank_00_model_states.pt...
+[2024-03-27 07:59:39,175] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-350/global_step350/mp_rank_00_model_states.pt.
+[2024-03-27 07:59:39,177] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-350/global_step350/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 07:59:39,452] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-350/global_step350/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 07:59:39,453] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-350/global_step350/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 07:59:39,453] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step350 is ready now!
++++++++++++++++++save call back++++++++++++++++
+[INFO|configuration_utils.py:729] 2024-03-27 07:59:38,810 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:59:38,811 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 07:59:38,884 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-350/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 07:59:38,885 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-350/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[INFO|configuration_utils.py:729] 2024-03-27 07:59:39,849 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 07:59:39,850 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 43%|█████████████████████████████████████                                                 | 359/832 [1:53:33<1:51:31, 14.15s/it]
+ 43%|█████████████████████████████████████▏                                                | 360/832 [1:53:46<1:50:05, 14.00s/it][INFO|trainer.py:3242] 2024-03-27 08:01:55,419 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:01:55,419 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:01:55,419 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:25<00:01,  3.54it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 44%|██████████████████████████████████████▏                                               | 369/832 [1:56:15<1:48:06, 14.01s/it]
+ 44%|██████████████████████████████████████▏                                               | 370/832 [1:56:28<1:46:31, 13.83s/it][INFO|trainer.py:3242] 2024-03-27 08:04:37,214 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:04:37,214 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:04:37,214 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [00:25<00:00,  3.52it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 46%|███████████████████████████████████████▏                                              | 379/832 [1:58:57<1:46:10, 14.06s/it]
+ 46%|███████████████████████████████████████▎                                              | 380/832 [1:59:11<1:45:10, 13.96s/it][INFO|trainer.py:3242] 2024-03-27 08:07:19,891 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:07:19,891 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:07:19,892 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:24<00:01,  3.58it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 47%|████████████████████████████████████████▎                                             | 390/832 [2:01:51<1:40:56, 13.70s/it][INFO|trainer.py:3242] 2024-03-27 08:10:00,641 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:10:00,641 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:10:00,641 >>   Batch size = 1
+  2%|█▉                                                                                           | 2/94 [00:00<00:12,  7.34it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [00:24<00:00,  3.65it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 48%|█████████████████████████████████████████▎                                            | 400/832 [2:04:32<1:39:30, 13.82s/it][INFO|trainer.py:3242] 2024-03-27 08:12:41,272 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:12:41,272 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:12:41,272 >>   Batch size = 1
+  0%|                                                                                                     | 0/94 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████████▏     | 88/94 [00:23<00:01,  3.78it/s]
+ 48%|█████████████████████████████████████████▎                                            | 400/832 [2:04:58<1:39:30, 13.82s/it][INFO|trainer.py:2936] 2024-03-27 08:13:10,599 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-400
+[INFO|configuration_utils.py:729] 2024-03-27 08:13:11,299 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 08:13:11,300 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 08:13:11,373 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-400/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 08:13:11,373 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-400/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[2024-03-27 08:13:11,504] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step400 is about to be saved!
+[2024-03-27 08:13:11,531] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-400/global_step400/mp_rank_00_model_states.pt
+[2024-03-27 08:13:11,531] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-400/global_step400/mp_rank_00_model_states.pt...
+[2024-03-27 08:13:11,630] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-400/global_step400/mp_rank_00_model_states.pt.
+[2024-03-27 08:13:11,632] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 08:13:11,963] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 08:13:11,964] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 08:13:11,964] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step400 is ready now!
++++++++++++++++++save call back++++++++++++++++
+[INFO|configuration_utils.py:729] 2024-03-27 08:13:12,359 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 08:13:12,360 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 49%|██████████████████████████████████████████▎                                           | 409/832 [2:07:05<1:39:38, 14.13s/it]
+ 49%|██████████████████████████████████████████▍                                           | 410/832 [2:07:19<1:38:16, 13.97s/it][INFO|trainer.py:3242] 2024-03-27 08:15:28,274 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:15:28,274 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:15:28,274 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:25<00:01,  3.57it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 50%|███████████████████████████████████████████▎                                          | 419/832 [2:09:48<1:36:42, 14.05s/it]
+ 50%|███████████████████████████████████████████▍                                          | 420/832 [2:10:02<1:35:23, 13.89s/it][INFO|trainer.py:3242] 2024-03-27 08:18:10,960 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:18:10,960 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:18:10,960 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.539581537246704, 'eval_accuracy': 0.843059451323801, 'eval_runtime': 26.3606, 'eval_samples_per_second': 3.566, 'eval_steps_per_second': 3.566, 'epoch': 7.96}
+
+
+
+
+
+
+
+
+ 52%|████████████████████████████████████████████▎                                         | 429/832 [2:12:30<1:34:17, 14.04s/it]
+ 52%|████████████████████████████████████████████▍                                         | 430/832 [2:12:44<1:33:02, 13.89s/it][INFO|trainer.py:3242] 2024-03-27 08:20:52,811 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:20:52,811 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:20:52,811 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:24<00:01,  3.54it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 53%|█████████████████████████████████████████████▍                                        | 440/832 [2:15:26<1:31:00, 13.93s/it][INFO|trainer.py:3242] 2024-03-27 08:23:35,442 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:23:35,442 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:23:35,442 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:18,  5.04it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.740827798843384, 'eval_accuracy': 0.8423411096668263, 'eval_runtime': 26.0375, 'eval_samples_per_second': 3.61, 'eval_steps_per_second': 3.61, 'epoch': 8.34}
+
+
+
+
+
+
+
+
+ 54%|██████████████████████████████████████████████▍                                       | 449/832 [2:17:54<1:29:50, 14.07s/it]
+ 54%|██████████████████████████████████████████████▌                                       | 450/832 [2:18:08<1:28:31, 13.90s/it][INFO|trainer.py:3242] 2024-03-27 08:26:17,116 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:26:17,117 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:26:17,117 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████   | 91/94 [00:25<00:00,  3.71it/s]
+
+
+ 54%|██████████████████████████████████████████████▌                                       | 450/832 [2:18:34<1:28:31, 13.90s/it][INFO|trainer.py:2936] 2024-03-27 08:26:46,451 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-450
+[2024-03-27 08:26:47,149] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step450 is about to be saved!
+[2024-03-27 08:26:47,176] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-450/global_step450/mp_rank_00_model_states.pt
+[2024-03-27 08:26:47,176] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-450/global_step450/mp_rank_00_model_states.pt...
+[2024-03-27 08:26:47,273] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-450/global_step450/mp_rank_00_model_states.pt.
+[2024-03-27 08:26:47,275] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-450/global_step450/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|configuration_utils.py:729] 2024-03-27 08:26:46,996 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 08:26:46,997 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 08:26:47,068 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-450/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 08:26:47,068 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-450/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[INFO|configuration_utils.py:729] 2024-03-27 08:26:48,010 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 08:26:48,011 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+[2024-03-27 08:26:47,631] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-450/global_step450/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 08:26:47,632] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-450/global_step450/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 08:26:47,632] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step450 is ready now!
++++++++++++++++++save call back++++++++++++++++
+
+
+
+
+
+
+
+
+ 55%|███████████████████████████████████████████████▍                                      | 459/832 [2:20:42<1:28:16, 14.20s/it]
+ 55%|███████████████████████████████████████████████▌                                      | 460/832 [2:20:56<1:27:00, 14.03s/it][INFO|trainer.py:3242] 2024-03-27 08:29:04,906 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:29:04,906 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:29:04,906 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [00:25<00:00,  3.61it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 56%|████████████████████████████████████████████████▌                                     | 470/832 [2:23:37<1:23:28, 13.84s/it][INFO|trainer.py:3242] 2024-03-27 08:31:46,380 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:31:46,381 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:31:46,381 >>   Batch size = 1
+  2%|█▉                                                                                           | 2/94 [00:00<00:12,  7.17it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.707970380783081, 'eval_accuracy': 0.8421016624478347, 'eval_runtime': 26.6241, 'eval_samples_per_second': 3.531, 'eval_steps_per_second': 3.531, 'epoch': 8.91}
+
+
+
+
+
+
+
+
+ 58%|█████████████████████████████████████████████████▌                                    | 480/832 [2:26:19<1:21:22, 13.87s/it][INFO|trainer.py:3242] 2024-03-27 08:34:28,477 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:34:28,477 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:34:28,477 >>   Batch size = 1
+  2%|█▉                                                                                           | 2/94 [00:00<00:12,  7.41it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.9171485900878906, 'eval_accuracy': 0.8411096668262982, 'eval_runtime': 26.129, 'eval_samples_per_second': 3.598, 'eval_steps_per_second': 3.598, 'epoch': 9.1}
+
+
+
+
+
+
+
+
+ 59%|██████████████████████████████████████████████████▋                                   | 490/832 [2:29:02<1:19:23, 13.93s/it][INFO|trainer.py:3242] 2024-03-27 08:37:11,156 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:37:11,156 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:37:11,156 >>   Batch size = 1
+{'loss': 0.3498, 'learning_rate': 7.939814814814816e-05, 'epoch': 9.29}
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.8026669025421143, 'eval_accuracy': 0.8417938017377027, 'eval_runtime': 26.2208, 'eval_samples_per_second': 3.585, 'eval_steps_per_second': 3.585, 'epoch': 9.29}
+
+
+
+
+
+
+
+
+ 60%|███████████████████████████████████████████████████▌                                  | 499/832 [2:31:31<1:18:24, 14.13s/it]
+ 60%|███████████████████████████████████████████████████▋                                  | 500/832 [2:31:45<1:16:57, 13.91s/it][INFO|trainer.py:3242] 2024-03-27 08:39:53,727 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:39:53,727 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:39:53,727 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|██████████████████████████████████████████████████████████████████████████████████████████  | 92/94 [00:25<00:00,  3.58it/s]
+
+ 60%|███████████████████████████████████████████████████▋                                  | 500/832 [2:32:11<1:16:57, 13.91s/it][INFO|trainer.py:2936] 2024-03-27 08:40:23,555 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-500
+[INFO|configuration_utils.py:729] 2024-03-27 08:40:24,102 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 08:40:24,103 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 08:40:24,176 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 08:40:24,177 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-500/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[INFO|configuration_utils.py:729] 2024-03-27 08:40:25,216 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 08:40:25,217 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+[2024-03-27 08:40:24,256] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step500 is about to be saved!
+[2024-03-27 08:40:24,284] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-500/global_step500/mp_rank_00_model_states.pt
+[2024-03-27 08:40:24,284] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-500/global_step500/mp_rank_00_model_states.pt...
+[2024-03-27 08:40:24,380] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-500/global_step500/mp_rank_00_model_states.pt.
+[2024-03-27 08:40:24,381] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 08:40:24,736] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 08:40:24,737] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 08:40:24,737] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step500 is ready now!
++++++++++++++++++save call back++++++++++++++++
+
+
+
+
+
+
+
+
+ 61%|████████████████████████████████████████████████████▋                                 | 510/832 [2:34:31<1:14:32, 13.89s/it][INFO|trainer.py:3242] 2024-03-27 08:42:40,386 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:42:40,386 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:42:40,386 >>   Batch size = 1
+  5%|████▉                                                                                        | 5/94 [00:01<00:21,  4.07it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.8018529415130615, 'eval_accuracy': 0.8426489703769583, 'eval_runtime': 26.241, 'eval_samples_per_second': 3.582, 'eval_steps_per_second': 3.582, 'epoch': 9.67}
+
+
+
+
+
+
+
+
+ 62%|█████████████████████████████████████████████████████▊                                | 520/832 [2:37:13<1:12:23, 13.92s/it][INFO|trainer.py:3242] 2024-03-27 08:45:22,590 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:45:22,590 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:45:22,590 >>   Batch size = 1
+  4%|███▉                                                                                         | 4/94 [00:00<00:20,  4.45it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.8479056358337402, 'eval_accuracy': 0.8402887049326128, 'eval_runtime': 26.4876, 'eval_samples_per_second': 3.549, 'eval_steps_per_second': 3.549, 'epoch': 9.86}
+
+
+
+
+
+
+
+
+ 64%|██████████████████████████████████████████████████████▊                               | 530/832 [2:39:56<1:10:29, 14.00s/it][INFO|trainer.py:3242] 2024-03-27 08:48:05,208 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:48:05,208 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:48:05,208 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:17,  5.14it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.870030403137207, 'eval_accuracy': 0.8408702196073066, 'eval_runtime': 26.3587, 'eval_samples_per_second': 3.566, 'eval_steps_per_second': 3.566, 'epoch': 10.05}
+
+
+
+
+
+
+
+
+ 65%|███████████████████████████████████████████████████████▊                              | 540/832 [2:42:38<1:07:16, 13.82s/it][INFO|trainer.py:3242] 2024-03-27 08:50:47,418 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:50:47,418 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:50:47,418 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:17,  5.14it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.984421730041504, 'eval_accuracy': 0.8393993295477868, 'eval_runtime': 26.4432, 'eval_samples_per_second': 3.555, 'eval_steps_per_second': 3.555, 'epoch': 10.24}
+
+
+
+
+
+
+
+
+ 66%|████████████████████████████████████████████████████████▊                             | 550/832 [2:45:20<1:05:28, 13.93s/it][INFO|trainer.py:3242] 2024-03-27 08:53:29,625 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:53:29,625 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:53:29,625 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:18,  5.01it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████████     | 89/94 [00:24<00:01,  3.58it/s]
+ 66%|████████████████████████████████████████████████████████▊                             | 550/832 [2:45:47<1:05:28, 13.93s/it][INFO|trainer.py:2936] 2024-03-27 08:53:59,426 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-550
+[INFO|configuration_utils.py:729] 2024-03-27 08:53:59,986 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 08:53:59,987 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 08:54:00,056 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-550/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 08:54:00,056 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-550/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[2024-03-27 08:54:00,130] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step550 is about to be saved!
+[2024-03-27 08:54:00,156] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-550/global_step550/mp_rank_00_model_states.pt
+[2024-03-27 08:54:00,157] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-550/global_step550/mp_rank_00_model_states.pt...
+[2024-03-27 08:54:00,260] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-550/global_step550/mp_rank_00_model_states.pt.
+[2024-03-27 08:54:00,262] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-550/global_step550/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 08:54:00,604] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-550/global_step550/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 08:54:00,605] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-550/global_step550/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 08:54:00,605] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step550 is ready now!
++++++++++++++++++save call back++++++++++++++++
+[INFO|configuration_utils.py:729] 2024-03-27 08:54:00,988 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 08:54:00,989 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 67%|█████████████████████████████████████████████████████████▊                            | 559/832 [2:47:54<1:04:38, 14.21s/it]
+ 67%|█████████████████████████████████████████████████████████▉                            | 560/832 [2:48:08<1:03:31, 14.01s/it][INFO|trainer.py:3242] 2024-03-27 08:56:17,261 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:56:17,261 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:56:17,261 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 2.9988842010498047, 'eval_accuracy': 0.8405623588971746, 'eval_runtime': 26.2639, 'eval_samples_per_second': 3.579, 'eval_steps_per_second': 3.579, 'epoch': 10.62}
+
+
+
+
+
+
+
+
+
+ 69%|██████████████████████████████████████████████████████████▉                           | 570/832 [2:50:50<1:00:31, 13.86s/it]
+ 69%|██████████████████████████████████████████████████████████▉                           | 570/832 [2:50:50<1:00:31, 13.86s/it][INFO|trainer.py:3242] 2024-03-27 08:58:58,957 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 08:58:58,957 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 08:58:58,957 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+ 98%|██████████████████████████████████████████████████████████████████████████████████████████  | 92/94 [00:25<00:00,  3.67it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 70%|█████████████████████████████████████████████████████████████▎                          | 580/832 [2:53:32<58:22, 13.90s/it][INFO|trainer.py:3242] 2024-03-27 09:01:41,088 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:01:41,088 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:01:41,088 >>   Batch size = 1
+{'loss': 0.3046, 'learning_rate': 5.856481481481482e-05, 'epoch': 11.0}
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [00:25<00:00,  3.61it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 71%|██████████████████████████████████████████████████████████████▎                         | 589/832 [2:56:01<56:58, 14.07s/it]
+ 71%|██████████████████████████████████████████████████████████████▍                         | 590/832 [2:56:14<56:10, 13.93s/it][INFO|trainer.py:3242] 2024-03-27 09:04:23,549 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:04:23,549 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:04:23,549 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.0632240772247314, 'eval_accuracy': 0.8405281521516043, 'eval_runtime': 26.8095, 'eval_samples_per_second': 3.506, 'eval_steps_per_second': 3.506, 'epoch': 11.18}
+
+
+
+
+
+
+
+
+ 72%|███████████████████████████████████████████████████████████████▍                        | 600/832 [2:58:59<54:35, 14.12s/it][INFO|trainer.py:3242] 2024-03-27 09:07:08,407 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:07:08,407 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:07:08,407 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:18,  5.01it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████████▏     | 88/94 [00:24<00:01,  3.49it/s]
+ 72%|███████████████████████████████████████████████████████████████▍                        | 600/832 [2:59:26<54:35, 14.12s/it][INFO|trainer.py:2936] 2024-03-27 09:07:38,701 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-600
+[INFO|configuration_utils.py:729] 2024-03-27 09:07:39,271 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 09:07:39,272 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 09:07:39,343 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-600/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 09:07:39,344 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-600/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[2024-03-27 09:07:39,407] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step600 is about to be saved!
+[2024-03-27 09:07:39,434] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-600/global_step600/mp_rank_00_model_states.pt
+[2024-03-27 09:07:39,434] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-600/global_step600/mp_rank_00_model_states.pt...
+[2024-03-27 09:07:39,534] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-600/global_step600/mp_rank_00_model_states.pt.
+[2024-03-27 09:07:39,536] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 09:07:39,890] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 09:07:39,890] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 09:07:39,891] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step600 is ready now!
++++++++++++++++++save call back++++++++++++++++
+[INFO|configuration_utils.py:729] 2024-03-27 09:07:40,264 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 09:07:40,265 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 73%|████████████████████████████████████████████████████████████████▌                       | 610/832 [3:01:49<52:28, 14.18s/it][INFO|trainer.py:3242] 2024-03-27 09:09:58,212 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:09:58,213 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:09:58,213 >>   Batch size = 1
+  5%|████▉                                                                                        | 5/94 [00:01<00:22,  3.94it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.00233793258667, 'eval_accuracy': 0.8405965656427448, 'eval_runtime': 26.8519, 'eval_samples_per_second': 3.501, 'eval_steps_per_second': 3.501, 'epoch': 11.56}
+
+
+
+
+
+
+
+
+ 75%|█████████████████████████████████████████████████████████████████▌                      | 620/832 [3:04:33<49:50, 14.11s/it][INFO|trainer.py:3242] 2024-03-27 09:12:42,412 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:12:42,412 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:12:42,412 >>   Batch size = 1
+  5%|████▉                                                                                        | 5/94 [00:01<00:22,  4.02it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.030376672744751, 'eval_accuracy': 0.8398440172401997, 'eval_runtime': 26.8585, 'eval_samples_per_second': 3.5, 'eval_steps_per_second': 3.5, 'epoch': 11.75}
+
+
+
+
+
+
+
+
+ 76%|██████████████████████████████████████████████████████████████████▋                     | 630/832 [3:07:18<47:26, 14.09s/it][INFO|trainer.py:3242] 2024-03-27 09:15:26,828 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:15:26,828 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:15:26,828 >>   Batch size = 1
+  4%|███▉                                                                                         | 4/94 [00:00<00:20,  4.31it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.0243465900421143, 'eval_accuracy': 0.84138332079086, 'eval_runtime': 26.8065, 'eval_samples_per_second': 3.507, 'eval_steps_per_second': 3.507, 'epoch': 11.94}
+
+
+
+
+
+
+
+
+ 77%|███████████████████████████████████████████████████████████████████▋                    | 640/832 [3:10:01<44:40, 13.96s/it][INFO|trainer.py:3242] 2024-03-27 09:18:10,219 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:18:10,219 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:18:10,219 >>   Batch size = 1
+{'loss': 0.1756, 'learning_rate': 4.467592592592593e-05, 'epoch': 12.13}
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.148585557937622, 'eval_accuracy': 0.840630772388315, 'eval_runtime': 27.0031, 'eval_samples_per_second': 3.481, 'eval_steps_per_second': 3.481, 'epoch': 12.13}
+
+
+
+
+
+
+
+
+ 78%|████████████████████████████████████████████████████████████████████▋                   | 649/832 [3:12:32<43:16, 14.19s/it]
+ 78%|████████████████████████████████████████████████████████████████████▊                   | 650/832 [3:12:45<42:38, 14.06s/it][INFO|trainer.py:3242] 2024-03-27 09:20:54,489 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:20:54,489 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:20:54,489 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████████     | 89/94 [00:25<00:01,  3.55it/s]
+ 78%|████████████████████████████████████████████████████████████████████▊                   | 650/832 [3:13:12<42:38, 14.06s/it][INFO|trainer.py:2936] 2024-03-27 09:21:24,702 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-650
+[INFO|configuration_utils.py:729] 2024-03-27 09:21:25,265 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 09:21:25,266 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 09:21:25,335 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-650/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 09:21:25,335 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-650/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[2024-03-27 09:21:25,409] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step650 is about to be saved!
+[2024-03-27 09:21:25,436] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-650/global_step650/mp_rank_00_model_states.pt
+[2024-03-27 09:21:25,436] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-650/global_step650/mp_rank_00_model_states.pt...
+[2024-03-27 09:21:25,533] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-650/global_step650/mp_rank_00_model_states.pt.
+[2024-03-27 09:21:25,535] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-650/global_step650/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 09:21:25,821] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-650/global_step650/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 09:21:25,821] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-650/global_step650/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 09:21:25,822] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step650 is ready now!
++++++++++++++++++save call back++++++++++++++++
+[INFO|configuration_utils.py:729] 2024-03-27 09:21:26,193 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 09:21:26,194 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 79%|█████████████████████████████████████████████████████████████████████▊                  | 660/832 [3:15:35<40:27, 14.12s/it][INFO|trainer.py:3242] 2024-03-27 09:23:44,028 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:23:44,028 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:23:44,028 >>   Batch size = 1
+{'loss': 0.1606, 'learning_rate': 4.00462962962963e-05, 'epoch': 12.51}
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [00:25<00:00,  3.51it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 81%|██████████████████████████████████████████████████████████████████████▊                 | 670/832 [3:18:19<38:04, 14.10s/it][INFO|trainer.py:3242] 2024-03-27 09:26:28,410 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:26:28,410 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:26:28,410 >>   Batch size = 1
+{'loss': 0.1793, 'learning_rate': 3.7731481481481484e-05, 'epoch': 12.7}
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.1070172786712646, 'eval_accuracy': 0.8403913251693234, 'eval_runtime': 26.8978, 'eval_samples_per_second': 3.495, 'eval_steps_per_second': 3.495, 'epoch': 12.7}
+
+
+
+
+
+
+
+
+ 82%|███████████████████████████████████████████████████████████████████████▉                | 680/832 [3:21:03<35:44, 14.11s/it][INFO|trainer.py:3242] 2024-03-27 09:29:12,246 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:29:12,246 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:29:12,246 >>   Batch size = 1
+  0%|                                                                                                     | 0/94 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.0762643814086914, 'eval_accuracy': 0.840938633098447, 'eval_runtime': 27.4114, 'eval_samples_per_second': 3.429, 'eval_steps_per_second': 3.429, 'epoch': 12.89}
+
+
+
+
+
+
+
+
+ 83%|████████████████████████████████████████████████████████████████████████▉               | 689/832 [3:23:34<33:51, 14.21s/it]
+ 83%|████████████████████████████████████████████████████████████████████████▉               | 690/832 [3:23:48<33:14, 14.04s/it][INFO|trainer.py:3242] 2024-03-27 09:31:57,071 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:31:57,071 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:31:57,071 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.1580986976623535, 'eval_accuracy': 0.8402887049326128, 'eval_runtime': 26.6067, 'eval_samples_per_second': 3.533, 'eval_steps_per_second': 3.533, 'epoch': 13.08}
+
+
+
+
+
+
+
+
+ 84%|██████████████████████████████████████████████████████████████████████████              | 700/832 [3:26:32<30:56, 14.07s/it][INFO|trainer.py:3242] 2024-03-27 09:34:40,806 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:34:40,806 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:34:40,806 >>   Batch size = 1
+{'loss': 0.1341, 'learning_rate': 3.0787037037037034e-05, 'epoch': 13.27}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:25<00:01,  3.50it/s]
+ 84%|██████████████████████████████████████████████████████████████████████████              | 700/832 [3:26:59<30:56, 14.07s/it][INFO|trainer.py:2936] 2024-03-27 09:35:11,439 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-700
+[INFO|configuration_utils.py:729] 2024-03-27 09:35:11,989 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 09:35:11,991 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 09:35:12,067 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-700/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 09:35:12,068 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-700/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[INFO|configuration_utils.py:729] 2024-03-27 09:35:13,052 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 09:35:13,053 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[2024-03-27 09:35:12,166] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step700 is about to be saved!
+[2024-03-27 09:35:12,194] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-700/global_step700/mp_rank_00_model_states.pt
+[2024-03-27 09:35:12,195] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-700/global_step700/mp_rank_00_model_states.pt...
+[2024-03-27 09:35:12,294] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-700/global_step700/mp_rank_00_model_states.pt.
+[2024-03-27 09:35:12,296] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-700/global_step700/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 09:35:12,650] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-700/global_step700/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 09:35:12,650] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-700/global_step700/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 09:35:12,651] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step700 is ready now!
++++++++++++++++++save call back++++++++++++++++
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 85%|██████████████████████████████████████████████████████████████████████████▉             | 709/832 [3:29:08<29:29, 14.38s/it]
+ 85%|███████████████████████████████████████████████████████████████████████████             | 710/832 [3:29:22<29:00, 14.27s/it][INFO|trainer.py:3242] 2024-03-27 09:37:31,327 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:37:31,328 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:37:31,328 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.135502576828003, 'eval_accuracy': 0.8412464938085791, 'eval_runtime': 26.9157, 'eval_samples_per_second': 3.492, 'eval_steps_per_second': 3.492, 'epoch': 13.46}
+
+
+
+
+
+
+
+
+ 87%|████████████████████████████████████████████████████████████████████████████▏           | 720/832 [3:32:07<26:29, 14.20s/it][INFO|trainer.py:3242] 2024-03-27 09:40:16,358 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:40:16,358 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:40:16,358 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:18,  4.83it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.1389591693878174, 'eval_accuracy': 0.8415885612642813, 'eval_runtime': 26.946, 'eval_samples_per_second': 3.488, 'eval_steps_per_second': 3.488, 'epoch': 13.65}
+
+
+
+
+
+
+
+
+ 88%|█████████████████████████████████████████████████████████████████████████████▏          | 730/832 [3:34:52<23:54, 14.07s/it][INFO|trainer.py:3242] 2024-03-27 09:43:00,770 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:43:00,770 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:43:00,770 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:18,  5.03it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 94/94 [00:26<00:00,  3.57it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 89%|██████████████████████████████████████████████████████████████████████████████▎         | 740/832 [3:37:36<21:27, 14.00s/it][INFO|trainer.py:3242] 2024-03-27 09:45:44,749 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:45:44,749 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:45:44,749 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:18,  5.04it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.1594598293304443, 'eval_accuracy': 0.8408360128617364, 'eval_runtime': 26.3856, 'eval_samples_per_second': 3.563, 'eval_steps_per_second': 3.563, 'epoch': 14.03}
+
+
+
+
+
+
+
+
+ 90%|███████████████████████████████████████████████████████████████████████████████▎        | 750/832 [3:40:20<19:23, 14.19s/it][INFO|trainer.py:3242] 2024-03-27 09:48:29,365 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:48:29,365 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:48:29,365 >>   Batch size = 1
+  2%|█▉                                                                                           | 2/94 [00:00<00:12,  7.09it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████ | 93/94 [00:26<00:00,  3.50it/s]
+
+
+ 90%|███████████████████████████████████████████████████████████████████████████████▎        | 750/832 [3:40:47<19:23, 14.19s/it][INFO|trainer.py:2936] 2024-03-27 09:48:59,496 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-750
+[2024-03-27 09:49:00,578] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step750 is about to be saved!
+[2024-03-27 09:49:00,606] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-750/global_step750/mp_rank_00_model_states.pt
+[2024-03-27 09:49:00,606] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-750/global_step750/mp_rank_00_model_states.pt...
+[INFO|configuration_utils.py:729] 2024-03-27 09:49:00,428 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 09:49:00,429 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 09:49:00,502 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-750/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 09:49:00,502 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-750/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[INFO|configuration_utils.py:729] 2024-03-27 09:49:01,471 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 09:49:01,472 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+[2024-03-27 09:49:00,707] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-750/global_step750/mp_rank_00_model_states.pt.
+[2024-03-27 09:49:00,709] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-750/global_step750/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 09:49:01,083] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-750/global_step750/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 09:49:01,084] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-750/global_step750/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 09:49:01,084] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step750 is ready now!
++++++++++++++++++save call back++++++++++++++++
+
+
+
+
+
+
+
+
+ 91%|████████████████████████████████████████████████████████████████████████████████▍       | 760/832 [3:43:12<17:12, 14.34s/it][INFO|trainer.py:3242] 2024-03-27 09:51:20,853 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:51:20,854 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:51:20,854 >>   Batch size = 1
+  4%|███▉                                                                                         | 4/94 [00:00<00:21,  4.15it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.2875421047210693, 'eval_accuracy': 0.8407675993705959, 'eval_runtime': 26.7365, 'eval_samples_per_second': 3.516, 'eval_steps_per_second': 3.516, 'epoch': 14.41}
+
+
+
+
+
+
+
+
+ 93%|█████████████████████████████████████████████████████████████████████████████████▍      | 770/832 [3:45:56<14:37, 14.15s/it][INFO|trainer.py:3242] 2024-03-27 09:54:05,608 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:54:05,609 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:54:05,609 >>   Batch size = 1
+  2%|█▉                                                                                           | 2/94 [00:00<00:12,  7.08it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.2551815509796143, 'eval_accuracy': 0.840938633098447, 'eval_runtime': 26.801, 'eval_samples_per_second': 3.507, 'eval_steps_per_second': 3.507, 'epoch': 14.6}
+
+
+
+
+
+
+
+
+ 94%|██████████████████████████████████████████████████████████████████████████████████▍     | 779/832 [3:48:28<12:39, 14.33s/it]
+ 94%|██████████████████████████████████████████████████████████████████████████████████▌     | 780/832 [3:48:42<12:18, 14.21s/it][INFO|trainer.py:3242] 2024-03-27 09:56:50,959 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:56:50,960 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:56:50,960 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.2452404499053955, 'eval_accuracy': 0.8414859410275707, 'eval_runtime': 26.6771, 'eval_samples_per_second': 3.524, 'eval_steps_per_second': 3.524, 'epoch': 14.79}
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████▌    | 790/832 [3:51:25<09:43, 13.90s/it][INFO|trainer.py:3242] 2024-03-27 09:59:33,725 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 09:59:33,725 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 09:59:33,726 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:18,  5.03it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.2435834407806396, 'eval_accuracy': 0.8411438735718684, 'eval_runtime': 26.4141, 'eval_samples_per_second': 3.559, 'eval_steps_per_second': 3.559, 'epoch': 14.98}
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████▌   | 799/832 [3:53:54<07:48, 14.18s/it]
+ 96%|████████████████████████████████████████████████████████████████████████████████████▌   | 800/832 [3:54:08<07:30, 14.08s/it][INFO|trainer.py:3242] 2024-03-27 10:02:17,137 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 10:02:17,137 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 10:02:17,137 >>   Batch size = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████    | 90/94 [00:25<00:01,  3.50it/s]
+ 96%|████████████████████████████████████████████████████████████████████████████████████▌   | 800/832 [3:54:35<07:30, 14.08s/it][INFO|trainer.py:2936] 2024-03-27 10:02:47,663 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-800
+[INFO|configuration_utils.py:729] 2024-03-27 10:02:48,212 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 10:02:48,213 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 10:02:48,286 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-800/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 10:02:48,287 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-800/special_tokens_map.json
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py:1877: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+[2024-03-27 10:02:48,346] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step800 is about to be saved!
+[2024-03-27 10:02:48,376] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-800/global_step800/mp_rank_00_model_states.pt
+[2024-03-27 10:02:48,376] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-800/global_step800/mp_rank_00_model_states.pt...
+[2024-03-27 10:02:48,474] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-800/global_step800/mp_rank_00_model_states.pt.
+[2024-03-27 10:02:48,476] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-800/global_step800/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-03-27 10:02:48,852] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-800/global_step800/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-03-27 10:02:48,853] [INFO] [engine.py:3487:_save_zero_checkpoint] zero checkpoint saved /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tmp-checkpoint-800/global_step800/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-03-27 10:02:48,853] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step800 is ready now!
++++++++++++++++++save call back++++++++++++++++
+[INFO|configuration_utils.py:729] 2024-03-27 10:02:49,232 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 10:02:49,233 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████▋  | 810/832 [3:56:57<05:11, 14.14s/it][INFO|trainer.py:3242] 2024-03-27 10:05:06,713 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 10:05:06,714 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 10:05:06,714 >>   Batch size = 1
+  0%|                                                                                                     | 0/94 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 94/94 [00:26<00:00,  3.70it/s]
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+ 99%|██████████████████████████████████████████████████████████████████████████████████████▋ | 820/832 [3:59:41<02:49, 14.09s/it][INFO|trainer.py:3242] 2024-03-27 10:07:50,432 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 10:07:50,432 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 10:07:50,432 >>   Batch size = 1
+  3%|██▉                                                                                          | 3/94 [00:00<00:18,  4.94it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.293464422225952, 'eval_accuracy': 0.8395703632756379, 'eval_runtime': 26.3365, 'eval_samples_per_second': 3.569, 'eval_steps_per_second': 3.569, 'epoch': 15.55}
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████▊| 830/832 [4:02:25<00:28, 14.06s/it][INFO|trainer.py:3242] 2024-03-27 10:10:33,898 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 10:10:33,898 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 10:10:33,898 >>   Batch size = 1
+  5%|████▉                                                                                        | 5/94 [00:01<00:22,  4.00it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  warnings.warn(
+/home/w1nd/.conda/envs/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'eval_loss': 3.2936770915985107, 'eval_accuracy': 0.8412122870630089, 'eval_runtime': 26.4742, 'eval_samples_per_second': 3.551, 'eval_steps_per_second': 3.551, 'epoch': 15.73}
+100%|████████████████████████████████████████████████████████████████████████████████████████| 832/832 [4:03:19<00:00, 19.45s/it][INFO|trainer.py:1962] 2024-03-27 10:11:27,843 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|████████████████████████████████████████████████████████████████████████████████████████| 832/832 [4:03:19<00:00, 17.55s/it]
+{'train_runtime': 14609.7296, 'train_samples_per_second': 0.924, 'train_steps_per_second': 0.057, 'train_loss': 0.9085406698644735, 'epoch': 15.77}
+[INFO|trainer.py:2936] 2024-03-27 10:11:31,103 >> Saving model checkpoint to /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16
+[INFO|configuration_utils.py:729] 2024-03-27 10:11:31,693 >> loading configuration file config.json from cache at /home/w1nd/.cache/huggingface/hub/models--FlagAlpha--Atom-7B-Chat/snapshots/52b7761650cc65f24f8ae832184947906af0c337/config.json
+[INFO|configuration_utils.py:792] 2024-03-27 10:11:31,694 >> Model config LlamaConfig {
+  "_name_or_path": "/mnt/nvme3n1/model_public/Atom7B/checkpoint-101k-32kl-9k-10k-chat",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "FlagAlpha/Atom-7B-Chat--configuration_atom.LlamaConfig",
+    "AutoModel": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForCausalLM": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForCausalLM",
+    "AutoModelForSequenceClassification": "FlagAlpha/Atom-7B-Chat--model_atom.LlamaForSequenceClassification"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_length": 4096,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 2,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.2",
+  "use_cache": true,
+  "vocab_size": 65000
+}
+[INFO|tokenization_utils_base.py:2433] 2024-03-27 10:11:31,763 >> tokenizer config file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2442] 2024-03-27 10:11:31,764 >> Special tokens file saved in /home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-1-16-16/special_tokens_map.json
+[INFO|trainer.py:3242] 2024-03-27 10:11:31,841 >> ***** Running Evaluation *****
+[INFO|trainer.py:3244] 2024-03-27 10:11:31,841 >>   Num examples = 94
+[INFO|trainer.py:3247] 2024-03-27 10:11:31,841 >>   Batch size = 1
+  6%|█████▉                                                                                       | 6/94 [00:01<00:22,  3.89it/s]
+***** train metrics *****
+  epoch                    =      15.77
+  train_loss               =     0.9085
+  train_runtime            = 4:03:29.72
+  train_samples            =        844
+  train_samples_per_second =      0.924
+  train_steps_per_second   =      0.057
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 94/94 [00:25<00:00,  3.71it/s]
+***** eval metrics *****
+  epoch                   =      15.77
+  eval_accuracy           =     0.8405
+  eval_loss               =     3.2894
+  eval_runtime            = 0:00:25.94
+  eval_samples            =         94
+  eval_samples_per_second =      3.623
+  eval_steps_per_second   =      3.623
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 94/94 [00:25<00:00,  3.67it/s]

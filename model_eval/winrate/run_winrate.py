@@ -137,7 +137,7 @@ if __name__ == "__main__":
     base_atom_vs_lora_atom_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/base_atom_vs_lora_atom.json"
     base_atom_vs_lora_baichuan2_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/base_atom_vs_lora_baichuan2.json"
     base_atom_cs_lora_chatglm3_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/base_atom_vs_lora_chatglm3.json"
-    test_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/test.json"
+    # test_file="/home/w1nd/darkword/1darkword/model_eval/data/winner/test.json"
     
     
     # 1.base_atom_vs_lora_atom

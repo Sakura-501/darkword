@@ -1,6 +1,6 @@
 # output_model=../darkword-Atom-7B-Chat
 # output_model=../darkword-threefold-Atom-7B-Chat
-output_model=/home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-8-2-16
+output_model=/home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-Atom-7B-Chat-1e4-2-8-16
 # 需要修改到自己的输入目录
 if [ ! -d ${output_model} ];then  
     mkdir ${output_model}
@@ -24,9 +24,9 @@ deepspeed --include localhost:1 finetune_clm_lora.py \
     --use_fast_tokenizer false \
     --output_dir ${output_model} \
     --learning_rate 1e-4 \
-    --per_device_train_batch_size 8 \
-    --per_device_eval_batch_size 8 \
-    --gradient_accumulation_steps 2 \
+    --per_device_train_batch_size 2 \
+    --per_device_eval_batch_size 2 \
+    --gradient_accumulation_steps 8 \
     --num_train_epochs 16 \
     --warmup_steps 400 \
     --lora_r 8 \

@@ -8,7 +8,7 @@ import json
 llama2_chinese_model_path="FlagAlpha/Atom-7B-Chat"
 atom_lora_model_path="/home/w1nd/darkword/1darkword/model_train/Atom-7B-Chat/darkword-threefold-Atom-7B-Chat"
 baichuan2_lora_model_path="/home/w1nd/darkword/1darkword/model_train/Baichuan2-7B-Chat/darkword-Baichuan2-7B-Chat"
-chatglm3_lora_model_path="/home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/darkword-ChatGLM3-6B/checkpoint-3000"
+chatglm3_lora_model_path="/home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/darkword-ChatGLM3-6B-1e4-1-16-16/checkpoint-820"
 device_map = "cuda" if torch.cuda.is_available() else "auto"
 
 

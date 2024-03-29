@@ -2,7 +2,7 @@
 # OMP_NUM_THREADS=2 torchrun --standalone --nnodes=1 --nproc_per_node=2  --master_port=56789 finetune_hf.py  /home/w1nd/darkword/1darkword/data_crawl/darkword_data_chatglm3  THUDM/chatglm3-6b  configs/lora.yaml configs/ds_zero_2.json
 
 # 跑之前要改！
-output_model="/home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/darkword-ChatGLM3-6B-1e4-8-2-16"
+output_model="/home/w1nd/darkword/1darkword/model_train/ChatGLM3-6B/darkword-ChatGLM3-6B-1e4-4-4-16"
 if [ ! -d ${output_model} ];then  
     mkdir ${output_model}
 fi
