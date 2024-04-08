@@ -1,0 +1,4 @@
+model_a_vs_model_b,model_a,tie,model_b
+atom_lora_vs_baichuan2_lora,26,24,44
+atom_lora_vs_chatglm3_lora,38,17,39
+baichuan2_lora_vs_chatglm3_lora,42,24,28

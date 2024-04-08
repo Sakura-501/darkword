@@ -1,0 +1,4 @@
+lora_model_name,lora_model,tie,base_model
+atom_lora,45,48,1
+baichuan2_lora,51,42,1
+chatglm3_lora,43,50,1
